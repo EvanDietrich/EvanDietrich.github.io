@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-144929033-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-144929033-1');
+</script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Evan Dietrich</title>
+    <link rel="icon" type="image/png" href="../images/webimage.jpg">
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <meta property="og:image" content="../images/webimage.jpg" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+</head>
+
+<body>
+        <div class="masthead">
+            <div class="heading"><a href="/">Evan Dietrich</a></div>   
+            <nav>
+                <div class="tab">
+                    <button onclick="window.location.href='/'">Home</button>
+                </div>
+                <div class="tab">
+                    <button onclick="window.location.href='/projects'">Projects</button>
+                </div>
+                <div class="tab">
+                    <button onclick="window.location.href='/updates'">Recents</button>
+                </div>
+                <div class="tab">
+                    <button onclick=" window.open('EvanWardDietrichResume.pdf','_blank')"> Resume</button>
+                </div>
+            </nav>    
+        </div>
+
+    <div class="container">
+
+    {{ content }}
+
+    </div>
+
+</body>
+</html>

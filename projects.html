@@ -1,0 +1,255 @@
+---
+layout: default
+---
+<h3> Projects </h3>
+
+<!-- Icons provided by: https://www.flaticon.com/authors/meticulous/gradient -->
+
+<div id="projectButtons">
+	<button class="btn active" onclick="filterSelection('all')">Show All</button>
+	<button class="btn" onclick="filterSelection('Personal')">Personal</button>
+	<button class="btn" onclick="filterSelection('Academic')">Academic</button>
+	<br>
+	<button class="btn" onclick="filterSelection('ccc')">C/C++</button>
+<!-- 	<button class="btn" onclick="filterSelection('cplusplus')">C++</button>
+ --><button class="btn" onclick="filterSelection('Fabrication')">Fabrication</button>
+	<button class="btn" onclick="filterSelection('HTML/CSS')">HTML/CSS/JavaScript</button>
+	<button class="btn" onclick="filterSelection('Python')">Python</button>
+	<button class="btn" onclick="filterSelection('Assembly')">Assembly</button>
+</div>
+
+
+<div id="tileContainer">
+
+	<a class="tile Personal Fabrication HTML/CSS Python" href="#bcipop">
+		<h1>Brain-Computer Interface</h1>
+<!-- 		<h2>Personal</h2>
+ -->		<div class="tileicon"><img src="../images/001-artificial-intelligence.png"></div>
+	</a>
+
+	<div id="bcipop" class="overlay">
+		<div class="popup">
+			<a class="close" href="#">&times;</a>
+			<h1>Brain-Computer Interface</h1>
+			<h2>Fabrication • HTML/CSS/JavaScript • Python</h2>
+			<div class="tileicon"><img src="../images/001-artificial-intelligence.png"></div>
+			<ul>
+				<li>Led a dozen students in designing & fabricating EEG headsets to measure electrical activity across the surface of the human brain</li><br>
+				<li>Created a software application that detects distinct brain states (i.e. resting, focused), ensuring proof-of-concept pipeline before beginning to prototype medical+industry applications</li>
+			</ul>
+		</div>
+	</div>
+
+	<a class="tile Academic ccc" href="#umpop">
+		<h1>Universal Machine</h1>
+<!-- 		<h2>Academic</h2>
+ -->		<div class="tileicon"><img src="../images/010-world.png"></div>
+	</a>
+
+	<div id="umpop" class="overlay">
+		<div class="popup">
+			<a class="close" href="#">&times;</a>
+			<h1>Universal Machine</h1>
+			<h2>C</h2>
+			<div class="tileicon"><img src="../images/010-world.png"></div>
+			<ul>
+				<li>Designed & implemented a Turing complete 32bit virtual machine with 8 registers & segmented memory on 64bit machine</li><br>
+				<li>Profiled & removed performance bottlenecks to decrease time for executing benchmark program from 120s to 2s</li>
+			</ul>
+		</div>
+	</div>
+
+	<a class="tile Academic ccc" href="#arithpop">
+		<h1>Image (De)Compressor</h1>
+<!-- 		<h2>Academic</h2>
+ -->		<div class="tileicon"><img src="../images/007-compressed-file.png"></div>
+	</a>
+
+	<div id="arithpop" class="overlay">
+		 <div class="popup">
+			<a class="close" href="#">&times;</a>
+			<h1>Image Compressor & Decompressor</h1>
+			<h2>C</h2>
+			<div class="tileicon"><img src="../images/007-compressed-file.png"></div>
+			<ul>
+				<li>Designed & implemented interfaces for converting RGB color space to component video color space, using the discrete cosine transform, & quantizing chroma</li><br>
+				<li>Wrote bitpacking module to condense pixel information into 64 bit words</li>
+			</ul>
+		</div>
+	</div>
+	
+	<a class="tile Academic Assembly" href="#rpniipop">
+		<h1>RPN Calculator</h1>
+<!-- 		<h2>Academic</h2>
+ -->		<div class="tileicon"><img src="../images/005-calculator.png"></div>
+	</a>
+
+	<div id="rpniipop" class="overlay">
+		<div class="popup">
+			<a class="close" href="#">&times;</a>
+			<h1>Reverse Polish Notation Calculator</h1>
+			<h2>UM Macro Assembler</h2>
+			<div class="tileicon"><img src="../images/005-calculator.png"></div>
+			<ul>
+				<li>Implemented calculator on UM (Universal Machine project) using jump table for control flow & a register for value stack</li><br>
+				<li>Wrote macros for mathematic and bitwise operations, & recursive print function to print multi-digit numbers in pseudo assembly</li>
+			</ul>
+		</div>
+	</div>
+
+	<a class="tile Academic ccc Assembly" href="#binarypop">
+		<h1>Binary Bomb</h1>
+<!-- 		<h2>Academic</h2>
+ -->		<div class="tileicon"><img src="../images/004-explosive.png"></div>
+	</a>
+
+	<div id="binarypop" class="overlay">
+		 <div class="popup">
+			<a class="close" href="#">&times;</a>
+			<h1>Binary Bomb</h1>
+			<h2>C • x64 Assembly</h2>
+			<div class="tileicon"><img src="../images/004-explosive.png"></div>
+			<ul>
+				<li>Used GNU Debugger to analyze assembly & reverse engineer inputs that would “defuse” each of the six mini programs</li><br>
+				<li>Wrote the C equivalent to understand the underlying structure of each program & how various data structures are represented in assembly</li>
+			</ul>
+		</div>
+	</div>
+
+	<a class="tile Academic ccc" href="#ppmtranspop">
+		<h1>Ppmtrans</h1>
+<!-- 		<h2>Academic</h2>
+ -->		<div class="tileicon"><img src="../images/008-compression.png"></div>
+	</a>
+
+	<div id="ppmtranspop" class="overlay">
+		 <div class="popup">
+			<a class="close" href="#">&times;</a>
+			<h1>Ppmtrans</h1>
+			<h2>C •<a href="https://github.com/EvanDietrich/CS_Projects/blob/master/locality/README" target="_blank"><u>LINK</u></a></h2>
+			<div class="tileicon"><img src="../images/008-compression.png"></div>
+			<ul>
+				<li>Designed & executed implementation of blocked (n x n) 2D array using 1D array for given polymorphic interface to maximize locality</li><br>
+				<li>Wrote program that transformed .ppm files with row, col, & block-major traversals</li>
+			</ul>
+		</div>
+	</div>
+
+	<a class="tile Academic ccc" href="#unblackpop">
+		<h1>Unblackedges</h1>
+<!-- 		<h2>Academic</h2>
+ -->		<div class="tileicon"><img src="../images/003-frame.png"></div>
+	</a>
+
+	<div id="unblackpop" class="overlay">
+		 <div class="popup">
+			<a class="close" href="#">&times;</a>
+			<h1>Unblackedges</h1>
+			<h2>C •<a href="https://github.com/EvanDietrich/CS_Projects/blob/master/iii/README" target="_blank"><u>LINK</u></a></h2>
+			<div class="tileicon"><img src="../images/003-frame.png"></div>
+			<ul>
+				<li>Designed & executed implementation of unboxed 2D array using 1D array for given interface</li><br>
+				<li>Wrote 2 versions of program removing black edges from scanned images, using stack & recursion</li>
+			</ul>
+		</div>
+	</div>
+
+	<a class="tile Academic ccc" href="#simlinespop">
+		<h1>Simlines</h1>
+<!-- 		<h2>Academic</h2>
+ -->		<div class="tileicon"><img src="../images/002-approval.png"></div>
+	</a>
+
+	<div id="simlinespop" class="overlay">
+		 <div class="popup">
+			<a class="close" href="#">&times;</a>
+			<h1>Simlines</h1>
+			<h2>C</h2>
+			<div class="tileicon"><img src="../images/002-approval.png"></div>
+			<ul>
+				<li>Wrote program that scanned through files & identified similar lines using hash tables</li><br>
+				<li>Parsed through input following given definition of similarity & stored locations of similar lines in linked lists</li>
+			</ul>
+		</div>
+	</div>
+
+	<a class="tile Academic ccc" href="#gerppop">
+		<h1>Gerp</h1>
+<!-- 		<h2>Academic</h2>
+ -->		<div class="tileicon"><img src="../images/009-conveyor.png"></div>
+	</a>
+
+	<div id="gerppop" class="overlay">
+		 <div class="popup">
+			<a class="close" href="#">&times;</a>
+			<h1>Gerp</h1>
+			<h2>C++</h2>
+			<div class="tileicon"><img src="../images/009-conveyor.png"></div>
+			<ul>
+				<li>Implemented program that indexed & queried file directories for all lines with a given word (both case-sensitive & case-insensitive capabilities)</li><br>
+				<li>Used hash tables to store word/line appearances & implemented chaining for handling collisions</li>
+			</ul>
+		</div>
+	</div>
+
+	<a class="tile Personal Python" href="#envoy">
+		<h1>ENVOY System</h1>
+<!-- 		<h2>Personal</h2>
+ -->		<div class="tileicon"><img src="../images/chat-2.png"></div>
+	</a>
+
+	<div id="envoy" class="overlay">
+		<div class="popup">
+			<a class="close" href="#">&times;</a>
+			<h1>ENVOY: Enabling Natural-language Versatility & Opportunity</h1>
+			<h2>Python • OpenCV • OpenFace • TensorFlow</h2>
+			<div class="tileicon"><img src="../images/chat-2.png"></div>
+			<ul>
+				<li>ENVOY is a modular system that utilizes machine learning, computer vision, & motion tracking to enable fluid communication between Deaf ASL-signers & English-speaking individuals</li><br>
+				<li>ENVOY won Best Overall Poster in the Poster Presentation Round (July 14th)</li><br>
+				<li>ENVOY won First Place in the Shark Tank Round (July 26th), securing MIT funding for launch during the Academic Year</li>
+			</ul>
+		</div>
+	</div>
+
+	<a class="tile Personal Fabrication" href="#3dprintedprostheticspop">
+		<h1>3D Printed Prosthetics</h1>
+<!-- 		<h2>Personal</h2>
+ -->		<div class="tileicon"><img src="../images/002-robot.png"></div>
+	</a>
+
+	<div id="3dprintedprostheticspop" class="overlay">
+		<div class="popup">
+			<a class="close" href="#">&times;</a>
+			<h1>3D Printed Prosthetics</h1>
+			<h2>Fabrication</h2>
+			<div class="tileicon"><img src="../images/002-robot.png"></div>
+			<ul>
+				<li>Led an intern group (@Faulhaber Fabrication Laboratory) to produce fully-functional 3D printed prosthetics custom-built & donated to those in need of an upper-limb assistive device</li><br>
+				<li>Used 3D design software to accurately & precisely take measurements of recipients’ matching upper arm, which is then replicated, printed & assembled into a final working product reliant solely on tension mechanics, body movement, & Newton’s Laws</li><br>
+			</ul>
+		</div>
+	</div>
+
+	<a class="tile Personal Fabrication" href="#learnboardpop">
+		<h1>LEARN Board</h1>
+<!-- 		<h2>Personal</h2>
+ -->		<div class="tileicon"><img src="../images/001-monitor.png"></div>
+	</a>
+
+	<div id="learnboardpop" class="overlay">
+		<div class="popup">
+			<a class="close" href="#">&times;</a>
+			<h1>LEARN Board</h1>
+			<h2>Fabrication</h2>
+			<div class="tileicon"><img src="../images/001-monitor.png"></div>
+			<ul>
+				<li>Designed & constructed a free-standing interactive LED display for a countywide donor event, later becoming a permanent installation at the Faulhaber Fabrication Laboratory</li><br>
+				<li>Used laser-cutting & CNC routing machinery to create each wood section & fixture assembled into the final display</li>
+			</ul>
+		</div>
+	</div>
+
+</div>
+
+<script src="../js/projectfilters.js" type="text/javascript"></script>

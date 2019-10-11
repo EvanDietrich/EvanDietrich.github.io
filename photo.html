@@ -1,0 +1,73 @@
+---
+layout: default
+---
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+img {margin-bottom: -7px}
+.w3-row-padding img {margin-bottom: 12px}
+</style>
+
+<body>
+<!-- !PAGE CONTENT! -->
+<div class="w3-content" style="max-width:1500px">
+
+<!-- Header -->
+<div class="w3-opacity">
+<div class="w3-clear"></div>
+<header class="w3-center w3-margin-bottom">
+<p class="w3-padding-16"><button class="w3-button w3-black" onclick="myFunction()">Fringe toggle</button></p>
+</header>
+</div>
+
+<!-- Photo Grid -->
+<div class="w3-row-padding" id="myGrid" style="margin-bottom:128px">
+  <div class="w3-third">
+    <br>
+    <img src="/images/github-own-photos/IMG_1242.jpeg" style="width:100%">
+    <img src="/images/github-own-photos/fullsizeoutput_6f2.jpeg" style="width:100%">
+    <img src="/images/github-own-photos/DSC_0348.jpeg" style="width:100%">
+    <img src="/images/github-own-photos/DSC_0301.jpeg" style="width:100%">
+    <img src="/images/github-own-photos/DSC_0440.jpeg" style="width:100%">
+    <img src="/images/github-own-photos/IMG_0895.jpeg" style="width:100%">
+<!--     <img src="/images/github-own-photos/photogithub1.jpg" style="width:100%">
+ -->  </div>
+
+  <div class="w3-third">
+    <img src="/images/github-own-photos/IMG_5751.jpg" style="width:100%">
+    <img src="/images/github-own-photos/IMG_1177.jpeg" style="width:100%">
+<!--     <img src="/images/github-own-photos/IMG_1880.jpeg" style="width:100%">
+    <img src="/images/github-own-photos/IMG_4836.jpeg" style="width:100%"> -->
+    <img src="/images/github-own-photos/IMG_6243.jpg" style="width:100%">
+    <img src="/images/github-own-photos/IMG_9930.jpeg" style="width:100%">
+    <img src="/images/github-own-photos/photogithub2.jpg" style="width:100%">
+    <img src="/images/github-own-photos/photogithub3.jpg" style="width:100%">
+  </div>
+
+  <div class="w3-third">
+    <img src="" style="width:100%">
+    <img src="/images/github-own-photos/IMG_6356.jpg" style="width:100%">
+    <img src="/images/github-own-photos/fullsizeoutput_334f.jpeg" style="width:100%">
+    <img src="/images/github-own-photos/IMG_8124.jpeg" style="width:100%">
+    <img src="/images/github-own-photos/photogithub4.jpg" style="width:100%">
+    <img src="/images/github-own-photos/IMG_6552.jpeg" style="width:100%">
+    <img src="/images/github-own-photos/photogithub5.jpg" style="width:100%">
+  </div>
+</div>
+
+<!-- End Page Content -->
+</div>
+
+<script>
+// Toggle grid padding
+function myFunction() {
+  var x = document.getElementById("myGrid");
+  if (x.className === "w3-row") {
+    x.className = "w3-row-padding";
+  } else { 
+    x.className = x.className.replace("w3-row-padding", "w3-row");
+  }
+}
+</script>
+
+</body>
+</html>
