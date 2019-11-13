@@ -28,12 +28,20 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 </head>
+
+<div id="ex1" class="modal">
+  <p>Thanks for clicking. That felt good.</p>
+  <a href="#" rel="modal:close">Close</a>
+</div>
+
 <body>
 
 <div id="particles-js">
   <div id="text">
   <div id="title"></div>
-  <div id="description">Recent work:<br><br>CIRCLE<br>Brain-Computer Interface</div>
+  <div id="description">Recent work:<br><br>
+    <a href="#ex1" rel="modal:open">CIRCLE</a>
+    <br>Brain-Computer Interface</div>
   <br><br>
   <div id="links">
         <a href="./index.html" title="Updates"><i class="fas fa-home fa-2x"></i></a>
