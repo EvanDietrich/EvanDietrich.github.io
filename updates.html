@@ -47,8 +47,8 @@
   <div id="description"><br>BCI<br>CIRCLE<br>Code for Good<br>ENVOY<br></div>
 
   <div id="ex1" class="modal">
-  <p>Thanks for clicking. That felt good.</p>
-  <a href="#" rel="modal:close">Close</a>
+    <p>Thanks for clicking. That felt good.</p>
+    <a href="#" rel="modal:close">Close</a>
   </div>
 
   <p><a href="#ex1" rel="modal:open">Open Modal</a></p>
@@ -62,6 +62,11 @@
         $('#headhead').hide().delay(500).fadeIn(1500);
         $('#description').hide().delay(1000).fadeIn(2000);
         $('#links').hide().delay(2000).fadeIn(2000);
+        $("#sticky").modal({
+  escapeClose: false,
+  clickClose: true,
+  showClose: false
+});
 </script>
 
 
