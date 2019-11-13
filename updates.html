@@ -20,31 +20,31 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="icon" type="image/png" href="../images/webimage.png">
 
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
   <!-- Latest compiled JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 </head>
-
 <body>
 
 <div id="particles-js">
-  <div id="text"></div>
+  <div id="text">
   <div id="title"></div>
-  <div id="description">Recent work:<br>
-    <br>CIRCLE
-    <br>Brain-Computer Interface
-  </div>
+  <div id="description">Recent Work:<br>CIRCLE<br>BCI<br></div>
   <br><br>
   <div id="links">
-        <a href="./index.html" title="Updates"><i class="fas fa-home fa-2x"></i></a>
+        <a href="./index.html" title="Updates"><i class="fas fa-house fa-2x"></i></a>
   </div>
 </div>
-
 <script>
-        $('#description').hide().delay(500).fadeIn(1500);
+        $('#title').hide().delay(500).fadeIn(1500);
+        $('#description').hide().delay(1000).fadeIn(2000);
         $('#links').hide().delay(2000).fadeIn(2000);
 </script>
+
 
 <!-- scripts -->
 <script src="particles.js"></script>
