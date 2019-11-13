@@ -205,6 +205,24 @@ h4.dateText {
 
 
 
+nav {
+  position: relative;
+  display: inline;
+}
+
+
+
+.marginauto {
+    margin: 5px auto 10px;
+    display: block;
+}
+
+
+.aligncenter {
+    text-align: center;
+}
+
+
 
 .container {
   text-align: center;  /* changed MOST RECENT -- this one works101!'*/'
@@ -244,12 +262,6 @@ h4.dateText {
   clear: both;
 }
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column.side, .column.middle {
-    width: 100%;
-  }
-}
 
 #currently {
   font-size: 18px;
