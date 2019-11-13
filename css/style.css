@@ -6,7 +6,7 @@ html,body {
 
 /* unvisited link */
 a:link {
-    color: #00bfff;
+    color: #00ace6;
     font-weight: bold;
       -webkit-transition: color 1s, font-size 1s;
   -moz-transition: color 1s, font-size 1s;
@@ -22,7 +22,7 @@ a:hover {
 
 /* visited link */
 a:visited {
-    color: #00bfff;
+    color: #00ace6;
 }
 
 html{
@@ -85,7 +85,7 @@ li {
 }
 
 #links {
-      color: #2C7086;
+      color: #0077b3;
       margin-top: 10px;
 }
 
