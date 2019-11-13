@@ -204,6 +204,61 @@ h4.dateText {
 
 
 
+
+
+.container {
+  text-align: center;  /* changed MOST RECENT -- this one works101!'*/'
+}/*changed*/
+
+.container-reads a {
+  color: #1E3756;
+  font-size: 22px; /* changed from 18*/
+  letter-spacing: 0.5px;
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.2;
+  font-weight: normal;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+  width: 33%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 66%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+
+#currently {
+  font-size: 18px;
+  font-weight: normal;
+  font-family: 'Raleway', sans-serif;
+  display: inline;
+}
+
+
 #projectButtons {
   margin: auto;
   margin-top: 20px;
