@@ -10,8 +10,8 @@
 function getColor()
 {
   var colorMap = {
-    0 : '#0077b3',
-    1 : '#0077b3',
+    0 : '#00ace6',
+    1 : '#00ace6',
   }
   var randomKey = Math.floor(Math.random() * Math.floor(Object.keys(colorMap).length));
   return colorMap[randomKey];
