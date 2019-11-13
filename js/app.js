@@ -122,7 +122,13 @@ particlesJS('particles-js',
     "retina_detect": true,
     "config_demo": {
       "hide_card": false,
-      "background_color": "#ffffff",
+      // "background_color": "#ffffff",
+      "background": rgb(36,34,82);
+      "background": -moz-linear-gradient("90deg", rgba(36,34,82,1) 0%, rgba(81,56,88,1) 51%, rgba(25,33,57,1) 100%);
+      "background": -webkit-linear-gradient("90deg", rgba(36,34,82,1) 0%, rgba(81,56,88,1) 51%, rgba(25,33,57,1) 100%);
+      "background": linear-gradient("90deg", rgba(36,34,82,1) 0%, rgba(81,56,88,1) 51%, rgba(25,33,57,1) 100%);
+      "filter": progid:DXImageTransform.Microsoft.gradient(startColorstr="#242252",endColorstr="#192139",GradientType=1);
+  
       "background_image": "",
       "background_position": "50% 50%",
       "background_repeat": "no-repeat",
