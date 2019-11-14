@@ -70,8 +70,9 @@ div.panel {
 padding: 0 18px;
 background-color: white;
 max-height: 0;
-/* added single line below*/
+/* added two lines below*/
 width: 60%;
+text-align: left;
 overflow: hidden;
 transition: 0.4s ease-in-out;
 opacity: 0;
@@ -93,9 +94,9 @@ max-height: 500px; /* Whatever you like, as long as its more than the height of 
   <div id="text2">
 
     <div id="headhead">Recent Work</div>
-    <div id="descriptionx">I'm an Undergrad CS Researcher at <a id='mitll' title="MITLL" href="https://www.ll.mit.edu">MIT Lincoln Laboratory</a><br>
+    <div id="descriptionx">I'm an Undergrad CS Researcher at <a id='mitll' title="MITLL" href="https://www.ll.mit.edu">MIT Lincoln Laboratory</a>
 
-    <br>
+    <br><br><br>
 
     <p class="accordion">Brain-Computer Interface</p>
     <div class="panel">A. The course is charged in Australian dollars.</div>
@@ -139,7 +140,7 @@ max-height: 500px; /* Whatever you like, as long as its more than the height of 
   
   <script>
         $('#headhead').hide().delay(500).fadeIn(1500);
-        $('#description').hide().delay(1000).fadeIn(2000);
+        $('#descriptionx').hide().delay(1000).fadeIn(2000);
         $('#links').hide().delay(2000).fadeIn(2000);
   </script>
 
