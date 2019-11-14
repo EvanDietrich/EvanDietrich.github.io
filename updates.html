@@ -35,76 +35,49 @@
 
 
 <style>
-button.accordion {
-  background-color: #eee;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 60%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-  transition: 0.4s;
-  box-shadow: none
+/* Style the element that is used to open and close the accordion class */
+p.accordion {
+background-color: #eee;
+color: #444;
+cursor: pointer;
+padding: 18px;
+width: 100%;
+text-align: left;
+border: none;
+outline: none;
+transition: 0.4s;
+margin-bottom:10px;
 }
-
-button.accordian.active, button.accordion:hover {
-  background-color: #ccc;
-  /*border: none;*/
-  box-shadow: none
+/* Add a background color to the accordion if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+p.accordion.active, p.accordion:hover {
+background-color: #ddd;
 }
-
-button.accordion:after {
-  content: '\002B';
-  width: 60%;
-  font-weight: bold;
-  float: right;
-  margin-left: 5px;
-  /*outline: none;
-  border: none;
-  box-shadow: none*/
+/* Unicode character for "plus" sign (+) */
+p.accordion:after {
+content: '\2795'; 
+font-size: 13px;
+color: #777;
+float: right;
+margin-left: 5px;
 }
-
-button.accordian.active:after {
-  content: "\2212";
-  border: none;
+/* Unicode character for "minus" sign (-) */
+p.accordion.active:after {
+content: "\2796"; 
 }
-
+/* Style the element that is used for the panel class */
 div.panel {
-  display: none;
-  padding: 0 18px;
-  background-color: transparent;
-  width: 60%;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  outline: none;
-  border: none;
-  box-shadow: none
+padding: 0 18px;
+background-color: white;
+max-height: 0;
+overflow: hidden;
+transition: 0.4s ease-in-out;
+opacity: 0;
+margin-bottom:10px;
 }
-
-/*.panel, .panel-group .panel-heading+.panel-collapse>.panel-body{
-    border: none;
-}*/
-
-/*div.panel {
-    display: none;
-}*/
-
 div.panel.show {
-    display: block;
-    padding: 0 18px;
-  background-color: transparent;
-  width: 60%;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  outline: none;
-  border: none;
-  box-shadow: none
+opacity: 1;
+max-height: 500px; /* Whatever you like, as long as its more than the height of the content (on all screen sizes) */
 }
-
 </style>
 
 
@@ -114,27 +87,14 @@ div.panel.show {
 <body>
 
   <div id="text2">
-    <div id="headhead">Recent Work</div><br>
-    <div id="description">I'm an Undergrad CS Researcher at <a id='mitll' title="MITLL" href="https://www.ll.mit.edu">MIT Lincoln Laboratory</a>
-    <br><br>
-
-    <button class="accordion">Brain Computer Interface</button>
-    <div class="panel">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
-    
-
-    <button class="accordion">CIRCLE</button>
-    <div class="panel">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
-    
-
-    <button class="accordion">ENVOY</button>
-    <div class="panel">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
-
+    <p class="accordion">Q1. What currency is the course charged in?</p>
+    <div class="panel">A. The course is charged in Australian dollars.</div>
+    <p class="accordion">Q2. What if the course doesn’t help me?</p>
+    <div class="panel">A. If it doesn't help you I'll refund the purchase price in full.</div>
+    <p class="accordion">Q3. When will the webinars take place?</p>
+    <div class="panel">A. Depending on the mix of countries and time zones for people attending the webinars, I will pick a time that works best for most participants. All webinars will be recorded so you can listen to them again. The private Facebook group will obviously be available 24/7 and I’ll be monitoring and contributing to the discussion regularly.</div>
+    <p class="accordion">Q4. What is the self-directed mentoring program?</p>
+    <div class="panel">A. The self-directed mentoring program is designed to help you set-up and run an effective mentee-mentor relationship as part of the course.</div>
 
     <script>
       document.addEventListener("DOMContentLoaded", function(event) { 
@@ -153,11 +113,10 @@ div.panel.show {
       }
       function setClass(els, className, fnName) {
       for (var i = 0; i < els.length; i++) {
-              els[i].classList[fnName](className);
+             els[i].classList[fnName](className);
           }
       }
       });
-
     </script>
 
     </div>
