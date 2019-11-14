@@ -35,7 +35,7 @@
 
 
 <style>
-.accordion {
+button.accordion {
   background-color: #eee;
   color: #444;
   cursor: pointer;
@@ -49,30 +49,30 @@
   box-shadow: none
 }
 
-.active, .accordion:hover {
+button.accordian.active, button.accordion:hover {
   background-color: #ccc;
-  border: none;
+  /*border: none;*/
   box-shadow: none
 }
 
-.accordion:after {
+button.accordion:after {
   content: '\002B';
-  color: transparent;
   width: 60%;
   font-weight: bold;
   float: right;
   margin-left: 5px;
-  outline: none;
+  /*outline: none;
   border: none;
-  box-shadow: none
+  box-shadow: none*/
 }
 
-.active:after {
+button.accordian.active:after {
   content: "\2212";
   border: none;
 }
 
-.panel {
+div.panel {
+  display: none;
   padding: 0 18px;
   background-color: transparent;
   width: 60%;
@@ -88,9 +88,9 @@
     border: none;
 }*/
 
-div.panel {
+/*div.panel {
     display: none;
-}
+}*/
 
 div.panel.show {
     display: block;
