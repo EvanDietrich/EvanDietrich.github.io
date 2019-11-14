@@ -35,9 +35,6 @@
 
 
 <style>
-
-
-<style>
 .accordion {
   background-color: #eee;
   color: #444;
@@ -53,18 +50,23 @@
 
 .active, .accordion:hover {
   background-color: #ccc;
+  border: none;
 }
 
 .accordion:after {
   content: '\002B';
-  color: #777;
+  color: transparent;
+  width: 60%;
   font-weight: bold;
   float: right;
   margin-left: 5px;
+  outline: none;
+  border: none;
 }
 
 .active:after {
   content: "\2212";
+  border: none;
 }
 
 .panel {
@@ -91,6 +93,8 @@
 
   <div id="text2">
     <div id="headhead">Recent Work</div><br>
+    <div id="description">I'm an Undergrad CS Researcher at <a id='mitll' title="MITLL" href="https://www.ll.mit.edu">MIT Lincoln Laboratory</a>
+    <br><br>
 
     <button class="accordion">Brain Computer Interface</button>
     <div class="panel">
