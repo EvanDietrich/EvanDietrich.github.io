@@ -37,12 +37,12 @@
 <style>
 .accordion {
   background-color: transparent;
-  color: transparent;
+  color: #444;
   cursor: pointer;
   padding: 18px;
   width: 60%;
   border: none;
-  text-align: center;
+  text-align: left;
   outline: none;
   font-size: 15px;
   transition: 0.4s;
@@ -50,6 +50,7 @@
 
 .active, .accordion:hover {
   background-color: transparent;
+  border: none;
 }
 
 .accordion:after {
@@ -60,10 +61,12 @@
   float: right;
   margin-left: 5px;
   outline: none;
+  border: none;
 }
 
 .active:after {
   content: "\2212";
+  border: none;
 }
 
 .panel {
@@ -74,7 +77,12 @@
   overflow: hidden;
   transition: max-height 0.2s ease-out;
   outline: none;
+  border: none;
 }
+
+/*.panel, .panel-group .panel-heading+.panel-collapse>.panel-body{
+    border: none;
+}*/
 </style>
 
 
