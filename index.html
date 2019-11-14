@@ -33,27 +33,187 @@
 
 
 
+<style>
+/* Style the element that is used to open and close the accordion class */
+p.accordion {
+background-color: #eee;
+color: #444;
+cursor: pointer;
+padding: 14px;
+width: 60%;
+text-align: left;
+border: none;
+outline: none;
+transition: 0.4s;
+margin-bottom:10px;
+margin: auto;
+}
+/* Add a background color to the accordion if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+p.accordion.active, p.accordion:hover {
+background-color: #ddd;
+}
+/* Unicode character for "plus" sign (+) */
+p.accordion:after {
+content: '\2795'; 
+font-size: 13px;
+color: #777;
+float: right;
+margin-left: 5px;
+}
+/* Unicode character for "minus" sign (-) */
+p.accordion.active:after {
+content: "\2796"; 
+}
+/* Style the element that is used for the panel class */
+div.panel {
+padding: 0 18px;
+background-color: white;
+max-height: 0;
+/* added 2 lines below*/
+width: 60%;
+text-align: left;
+/* added 2 lines above*/
+overflow: hidden;
+transition: 0.4s ease-in-out;
+opacity: 0;
+margin-bottom:10px;
+margin: auto;
+}
+div.panel.show {
+opacity: 1;
+max-height: 500px; /* Whatever you like, as long as its more than the height of the content (on all screen sizes) */
+border: none;
+}
+</style>
 
 <body>
 
   <div id="particles-js">
-    <div id="text">
-    <div id="title">Evan Dietrich</div>
-    <div id="description">I'm an Undergrad CS Researcher at <a id='mitll' title="MITLL" href="https://www.ll.mit.edu">MIT Lincoln Laboratory</a><br></div>
-    <br><br>
-    <div id="links">
-        <a href="./EvanWardDietrichResume.pdf" target="_blank" title="Resume"><i class="fas fa-pen-square fa-2x"></i></a>
-        <a href="https://linkedin.com/in/evandietrich" target="_blank" title="LinkedIn"><i class="fab fa-linkedin fa-2x"></i></a>
-        <a href="https://github.com/EvanDietrich" target="_blank" title="GitHub"><i class="fab fa-github-square fa-2x"></i></a>
-        <a href="mailto:Evan.Dietrich@tufts.edu" title="Email"><i class="fas fa-envelope-square fa-2x"></i></a>
-        <a href="./updates.html" title="Updates"><i class="fas fa-coffee fa-2x"></i></a>
-    </div>
+
+
+    		<div id="text">
+    			<div id="title">Evan Dietrich</div>
+    			<div id="description">I'm an Undergrad CS Researcher at <a id='mitll' title="MITLL" href="https://www.ll.mit.edu">MIT Lincoln Laboratory</a><br></div>
+    			<br><br>
+    		
+
+    			<div id="links">
+    		    	<a href="./EvanWardDietrichResume.pdf" target="_blank" title="Resume"><i class="fas fa-pen-square fa-2x"></i></a>
+    		    	<a href="https://linkedin.com/in/evandietrich" target="_blank" title="LinkedIn"><i class="fab fa-linkedin fa-2x"></i></a>
+        			<a href="https://github.com/EvanDietrich" target="_blank" title="GitHub"><i class="fab fa-github-square fa-2x"></i></a>
+        			<a href="mailto:Evan.Dietrich@tufts.edu" title="Email"><i class="fas fa-envelope-square fa-2x"></i></a>
+        			<a onclick="myFunction()" title="Updates"><i class="fas fa-coffee fa-2x"></i></a>
+    			</div>
+    		</div>
+
+    		<div id="text2">
+
+    			<div id="headhead">Recent Work</div>
+    			<div id="descriptionx">Academic and <a id='mitll' title="MITLL" href="https://www.ll.mit.edu">personal</a>
+
+    			<br><br>
+
+      			<p class="accordion">Brain-Computer Interface</p>
+      			<div class="panel">
+      			  • Led a dozen students in designing & fabricating EEG headsets to measure electrical activity across the surface of the human brain
+      			  <br>
+      			  • Created a software application that detects distinct brain states (i.e. resting, focused), ensuring proof-of-concept pipeline before beginning to prototype medical+industry applications
+      			</div>
+
+      			<p class="accordion">CIRCLE</p>
+      			<div class="panel">
+        			• Designed and developed automated software system in C++ to set hardware configurations and run calibration tests on lasercom terminals, replacing 3-week manual testing with overnight calibration.
+        			<br>
+        			• Implemented MATLAB signal processing algorithms to make real-time corrections on transmissions.
+        			<br>
+        			• Programmed API functions, user interface, and request-handler components of client-server system.
+      			</div>
+
+      			<p class="accordion">ENVOY</p>
+      			<div class="panel">
+        			• ENVOY is a modular system that utilizes machine learning, computer vision, & motion tracking to enable fluid communication between Deaf ASL-signers & English-speaking individuals
+        			<br>
+        			• ENVOY won Best Overall Poster in the Poster Presentation Round (July 14th)
+        			<br>
+        			• ENVOY won First Place in the Shark Tank Round (July 26th), securing MIT funding for launch during the Academic Year
+      			</div>
+
+      			<script>
+        			document.addEventListener("DOMContentLoaded", function(event)
+        			{ 
+          			var acc = document.getElementsByClassName("accordion");
+          			var panel = document.getElementsByClassName('panel');
+          			for (var i = 0; i < acc.length; i++) 
+          			{
+            			acc[i].onclick = function() 
+            			{
+              			var setClasses = !this.classList.contains('active');
+              			setClass(acc, 'active', 'remove');
+              			setClass(panel, 'show', 'remove');
+              			if (setClasses) 
+              			{
+                			this.classList.toggle("active");
+                			this.nextElementSibling.classList.toggle("show");
+              			}
+            			}
+          			}
+          			function setClass(els, className, fnName) 
+          			{
+            			for (var i = 0; i < els.length; i++) 
+            			{
+              			els[i].classList[fnName](className);
+            			}
+          			}
+        			});
+      			</script>
+      			<br>
+      			<div id="links2">
+        			<a onclick="myFunction()" title="Updates"><i class="fas fa-home fa-2x"></i></a>
+    			</div>
+
+    		</div>
+
+    		<br><br><br><br>
+
   </div>
 
   <script>
-        $('#title').hide().delay(500).fadeIn(1500);
+		var z = document.getElementById("text2");
+		// var z2 = document.getElementById("links2");
+		z.style.display = "none";
+		// z2.style.display = "none";
+
+		$('#title').hide().delay(500).fadeIn(1500);
         $('#description').hide().delay(1000).fadeIn(2000);
         $('#links').hide().delay(2000).fadeIn(2000);
+
+		function myFunction() 
+		{
+		 	var x = document.getElementById("text");
+			var y = document.getElementById("text2");
+			if (x.style.display === "none")
+			{
+    			x.style.display = "block";
+    			y.style.display = "none";
+  			} else {
+    			x.style.display = "none";
+    			y.style.display = "block";
+  			}
+		}
+
+		function myFunction2() 
+		{
+  			var y = document.getElementById("text");
+  			var x = document.getElementById("text2");
+  			if (x.style.display === "none")
+  			{
+  			x.style.display = "block";
+  			y.style.display = "none";
+  			} else {
+    			x.style.display = "none";
+    			y.style.display = "block";
+  			}
+		}
   </script>
 
 
