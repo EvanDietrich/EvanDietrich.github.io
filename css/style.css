@@ -4,6 +4,11 @@ html,body {
 	background: #ffffff;
 }
 
+a {
+    color: #00ace6;
+    text-decoration: none;
+}
+
 /* unvisited link */
 a:link {
     color: #00ace6;
