@@ -149,6 +149,7 @@ border: none;
                             this.nextElementSibling.classList.toggle("show");
                             for (let j = 0; j < acc.length; j += 1) {
                                 if (i !== j) {
+                                    acc[j].style.display.fadeOut(500)
                                     acc[j].style.display = acc[j].style.display === 'none' ? 'block' : 'none';
                                 }
                             }
@@ -174,8 +175,8 @@ border: none;
 		// z2.style.display = "none";
 
 		$('#title').hide().delay(500).fadeIn(1500);
-        $('#description').hide().delay(1000).fadeIn(2000);
-        $('#links').hide().delay(2000).fadeIn(2000);
+    $('#description').hide().delay(1000).fadeIn(2000);
+    $('#links').hide().delay(2000).fadeIn(2000);
 
 		function myFunction() 
 		{
