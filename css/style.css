@@ -30,6 +30,33 @@ a:visited {
     color: #00ace6;
 }
 
+
+
+button {
+    color: #00ace6;
+    text-decoration: none;
+}
+
+/* unvisited link */
+button:link {
+    color: #00ace6;
+    font-weight: bold;
+      -webkit-transition: color 1s, font-size 1s;
+  -moz-transition: color 1s, font-size 1s;
+  -o-transition: color 1s, font-size 1s;
+  transition: color 1s, font-size 1s;
+  padding-right: 5px;
+}
+
+button:hover {
+    filter: brightness(40%);
+
+}
+
+
+
+
+
 html{
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
