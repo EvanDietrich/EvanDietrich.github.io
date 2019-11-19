@@ -120,6 +120,7 @@ li {
 #links2 {
       color: #0077b3;
       margin-top: 10px;
+      cursor: pointer;
 }
 
 #text {
