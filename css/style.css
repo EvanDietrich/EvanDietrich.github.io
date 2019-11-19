@@ -13,11 +13,11 @@ a {
 a:link {
     color: #00ace6;
     font-weight: bold;
-      -webkit-transition: color 1s, font-size 1s;
-  -moz-transition: color 1s, font-size 1s;
-  -o-transition: color 1s, font-size 1s;
-  transition: color 1s, font-size 1s;
-  padding-right: 5px;
+    -webkit-transition: color 1s, font-size 1s;
+    -moz-transition: color 1s, font-size 1s;
+    -o-transition: color 1s, font-size 1s;
+    transition: color 1s, font-size 1s;
+    padding-right: 5px;
 }
 
 a:hover {
@@ -39,7 +39,7 @@ a:visited {
     font-size: 13px;
     letter-spacing: 2px;
     background-color: #00ace6;
-    margin-right: 30px;
+    /*margin-right: 30px;*/
     border-radius: 4px;
 }
 
