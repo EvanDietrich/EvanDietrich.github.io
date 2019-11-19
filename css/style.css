@@ -31,6 +31,19 @@ a:visited {
 }
 
 
+#resume {
+    color: #FFFFFF;
+    text-decoration: none;
+    width: 100px;
+    padding: 13px;
+    font-size: 13px;
+    letter-spacing: 2px;
+    background-color: #4BD9A9;
+    margin-right: 30px;
+    border-radius: 4px;
+}
+
+
 html{
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -114,31 +127,6 @@ li {
     display: block;
     background: transparent;
 }
-
-
-
-#newbutton {
-    color: #00ace6;
-    text-decoration: none;
-}
-
-/* unvisited link */
-#newbutton:link {
-    color: #00ace6;
-    font-weight: bold;
-      -webkit-transition: color 1s, font-size 1s;
-  -moz-transition: color 1s, font-size 1s;
-  -o-transition: color 1s, font-size 1s;
-  transition: color 1s, font-size 1s;
-  padding-right: 5px;
-}
-
-#newbutton:hover {
-    filter: brightness(40%);
-
-}
-
-
 
 
 #text2 {
