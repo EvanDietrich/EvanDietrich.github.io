@@ -35,15 +35,15 @@ a:visited {
     color: #ffffff;
     text-decoration: none;
     width: 100px;
-    padding: 13px;
-    font-size: 13px;
+    padding: 4px;
+    /*font-size: 13px;*/
     letter-spacing: 2px;
     background-color: #00ace6;
     /*margin-right: 30px;*/
     border-radius: 4px;
 }
 
-nav {
+#nav {
     display:flex;
     align-items: center;
     justify-content: center;
