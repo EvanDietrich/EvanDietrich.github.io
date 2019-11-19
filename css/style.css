@@ -61,19 +61,6 @@ canvas{
 }
 
 
-#resume {
-    color: #FFFFFF;
-    text-decoration: none;
-    width: 100px;
-    padding: 13px;
-    font-size: 13px;
-    letter-spacing: 2px;
-    background-color: #4BD9A9;
-    margin-right: 30px;
-    border-radius: 4px;
-}
-
-
 /* Media query for responsive design on mobile devices */
 @media only screen and (max-width: 500px) {
   /* For mobile phones: */
