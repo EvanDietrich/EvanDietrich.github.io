@@ -34,9 +34,10 @@ a:visited {
 #resume {
     color: #ffffff;
     text-decoration: none;
-    width: 100px;
+    width: 125px;
     padding: 3.7px;
     /*font-size: 13px;*/
+    text-align: center;
     letter-spacing: 2px;
     background-color: #00ace6;
     /*margin-right: 30px;*/
