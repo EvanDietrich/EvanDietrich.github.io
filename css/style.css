@@ -76,6 +76,7 @@ a.button7:active{
 
 #nav {
     display:flex;
+    position: relative;
     align-items: center;
     justify-content: center;
     margin: -28px; 
