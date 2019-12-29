@@ -86,27 +86,26 @@ max-height: 500px; /* Whatever you like, as long as its more than the height of 
 border: none;
 }
 
-
-a.button1{
+a.button7{
  display:inline-block;
- padding:0.35em 1.2em;
- border:0.1em solid #FFFFFF;
+ padding:0.7em 1.7em;
  margin:0 0.3em 0.3em 0;
- border-radius:0.12em;
+ border-radius:0.2em;
  box-sizing: border-box;
  text-decoration:none;
  font-family:'Roboto',sans-serif;
- font-weight:300;
+ font-weight:400;
  color:#FFFFFF;
+ background-color:#3369ff;
+ box-shadow:inset 0 -0.6em 1em -0.35em rgba(0,0,0,0.17),inset 0 0.6em 2em -0.3em rgba(255,255,255,0.15),inset 0 0 0em 0.05em rgba(255,255,255,0.12);
  text-align:center;
- transition: all 0.2s;
+ position:relative;
 }
-a.button1:hover{
- color:#000000;
- background-color:#FFFFFF;
+a.button7:active{
+ box-shadow:inset 0 0.6em 2em -0.3em rgba(0,0,0,0.15),inset 0 0 0em 0.05em rgba(255,255,255,0.12);
 }
 @media all and (max-width:30em){
- a.button1{
+ a.button7{
   display:block;
   margin:0.4em auto;
  }
@@ -149,8 +148,8 @@ a.button1:hover{
 
 
 
-            <a href="something" class="button1">Button</a>
-            <a href="something" class="button1">Another button</a>
+            <a href="something" class="button7" style="background-color:#2979FF">Login</a>
+            <a href="something" class="button7" style="background-color:#2979FF">And Another</a>
 <!--       			<p class="accordion">Brain-Computer Interface</p>
       			<div class="panel">
       			  • Led a dozen students in designing & fabricating EEG headsets to measure electrical activity across the surface of the human brain
