@@ -31,7 +31,7 @@ a:visited {
 }
 
 
-
+/*
 a.button7{
  display:inline-block;
  padding:0.7em 1.7em;
@@ -56,7 +56,7 @@ a.button7:active{
   margin:0.4em auto;
  }
 }
-
+*/
 
 #resume {
     color: #ffffff;
@@ -67,9 +67,9 @@ a.button7:active{
     text-align: center;
     letter-spacing: 2px;
     background-color: #00ace6;
-    /*margin-right: 30px;*/
-    margin: 0 5px;
-    border-radius: 3.7px;
+    margin-right: 5px;
+/*    margin: 0 5px;
+*/  border-radius: 3.7px;
     cursor: pointer;
 }
 
