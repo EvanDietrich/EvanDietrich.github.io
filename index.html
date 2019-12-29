@@ -85,6 +85,33 @@ opacity: 1;
 max-height: 500px; /* Whatever you like, as long as its more than the height of the content (on all screen sizes) */
 border: none;
 }
+
+
+a.button1{
+ display:inline-block;
+ padding:0.35em 1.2em;
+ border:0.1em solid #FFFFFF;
+ margin:0 0.3em 0.3em 0;
+ border-radius:0.12em;
+ box-sizing: border-box;
+ text-decoration:none;
+ font-family:'Roboto',sans-serif;
+ font-weight:300;
+ color:#FFFFFF;
+ text-align:center;
+ transition: all 0.2s;
+}
+a.button1:hover{
+ color:#000000;
+ background-color:#FFFFFF;
+}
+@media all and (max-width:30em){
+ a.button1{
+  display:block;
+  margin:0.4em auto;
+ }
+}
+
 </style>
 
 <body>
@@ -122,10 +149,8 @@ border: none;
 
 
 
-            <div class="ui-grid-a ui-responsive">
-              <div class="ui-block-a"><a href="#" class="ui-btn ui-shadow ui-corner-all">Grid A</a></div>
-              <div class="ui-block-b"><a href="#" class="ui-btn ui-shadow ui-corner-all">Grid A</a></div>
-            </div>
+            <a href="something" class="button1">Button</a>
+            <a href="something" class="button1">Another button</a>
 <!--       			<p class="accordion">Brain-Computer Interface</p>
       			<div class="panel">
       			  • Led a dozen students in designing & fabricating EEG headsets to measure electrical activity across the surface of the human brain
