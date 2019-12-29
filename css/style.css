@@ -60,6 +60,7 @@ a.button7:active{
 
 #resume {
     color: #ffffff;
+    position: relative;
     text-decoration: none;
     width: 125px;
     padding: 3.7px;
