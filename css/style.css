@@ -45,7 +45,7 @@ a:visited {
 }
 
 #nav {
-    display: inline-flex;
+    display: block;
     position: relative;
     align-items: center;
     justify-content: center;
@@ -54,7 +54,7 @@ a:visited {
 }
 
 #nav2 {
-    display: inline-flex;
+    display: block;
     position: relative;
     align-items: center;
     justify-content: center;
