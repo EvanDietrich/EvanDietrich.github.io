@@ -54,8 +54,8 @@ a:visited {
 }
 
 #nav2 {
-    display: block;
-    position: relative;
+    display: flex;
+    position: absolute;
     align-items: center;
     justify-content: center;
     margin: -28px; 
