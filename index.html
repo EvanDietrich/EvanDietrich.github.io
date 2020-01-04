@@ -33,86 +33,6 @@
 
 
 
-<style>
-/* Style the element that is used to open and close the accordion class */
-p.accordion {
-background-color: #eee;
-color: #444;
-cursor: pointer;
-padding: 14px;
-width: 60%;
-text-align: left;
-border: none;
-outline: none;
-transition: 0.4s;
-margin-bottom:10px;
-margin: auto;
-}
-/* Add a background color to the accordion if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-p.accordion.active, p.accordion:hover {
-background-color: #ddd;
-}
-/* Unicode character for "plus" sign (+) */
-p.accordion:after {
-content: '\2795'; 
-font-size: 13px;
-color: #777;
-float: right;
-margin-left: 5px;
-}
-/* Unicode character for "minus" sign (-) */
-p.accordion.active:after {
-content: "\2796"; 
-}
-/* Style the element that is used for the panel class */
-div.panel {
-/*padding: 20px 20px;*/
-background-color: white;
-max-height: 0;
-/* added 2 lines below*/
-width: 60%;
-text-align: left;
-/* added 2 lines above*/
-overflow: hidden;
-transition: 0.4s ease-in-out;
-opacity: 0;
-margin-bottom:10px;
-margin: auto;
-}
-div.panel.show {
-padding: 10pt;
-opacity: 1;
-max-height: 500px; /* Whatever you like, as long as its more than the height of the content (on all screen sizes) */
-border: none;
-}
-
-a.button7{
- display:inline-block;
- padding:0.7em 1.7em;
- margin:0 0.3em 0.3em 0;
- border-radius:0.2em;
- box-sizing: border-box;
- text-decoration:none;
- font-family:'Roboto',sans-serif;
- font-weight:400;
- color:#FFFFFF;
- background-color:#3369ff;
- box-shadow:inset 0 -0.6em 1em -0.35em rgba(0,0,0,0.17),inset 0 0.6em 2em -0.3em rgba(255,255,255,0.15),inset 0 0 0em 0.05em rgba(255,255,255,0.12);
- text-align:center;
- position:relative;
-}
-a.button7:active{
- box-shadow:inset 0 0.6em 2em -0.3em rgba(0,0,0,0.15),inset 0 0 0em 0.05em rgba(255,255,255,0.12);
-}
-@media all and (max-width:30em){
- a.button7{
-  display:block;
-  margin:0.4em auto;
- }
-}
-
-</style>
-
 <body>
 
   <div id="particles-js">
@@ -125,16 +45,9 @@ a.button7:active{
 <!--           <div id= "nav">
               <a class= "elements" id="resume" href="./EvanWardDietrichResume.pdf" target="_blank"><b>RESUME</b></a>
               <a class= "elements" id="resume" onclick="myFunction()"><b>PROJECTS</b></a> 
-          </div>
-          <br><br><br><br>
- -->          
-          <div id= "nav">
-              <a class= "elements" id="resume" href="./EvanWardDietrichResume.pdf" target="_blank"><b>RESUME</b></a>
-              <a class= "elements" id="resume" onclick="myFunction()"><b>PROJECTS</b></a> 
-          </div>
-<!-- 
-
-          <div id= "nav2">
+          </div> -->
+          
+<!--      <div id= "nav2">
               <a href="https://linkedin.com/in/evandietrich" target="_blank" title="LinkedIn"><i class="fab fa-linkedin fa-2x"></i></a>
               <a href="https://github.com/EvanDietrich" target="_blank" title="GitHub"><i class="fab fa-github-square fa-2x"></i></a>
               <a href="mailto:evand@mit.edu" title="Email"><i class="fas fa-envelope-square fa-2x"></i></a>
@@ -149,7 +62,6 @@ a.button7:active{
     			<div id="descriptionx">Academic and <a id='mitll' title="MITLL" href="https://www.ll.mit.edu">personal</a>
 
     			<br><br>
-
 
 
             <a href="something" class="button7" style="background-color:#2979FF">TBD</a>
