@@ -83,6 +83,15 @@ a.button7:active{
     /*animation: fadein 3s; */
 }
 
+#nav2 {
+    display:flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin: -28px; 
+    /*animation: fadein 3s; */
+}
+
 html{
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
