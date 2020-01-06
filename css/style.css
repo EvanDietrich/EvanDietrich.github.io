@@ -71,25 +71,27 @@ a:visited {
   border: none;
   color: #ffffff;
   text-align: center;
-  font-size: 18px;
+  font-size: 14px;
   letter-spacing: 2px;
   padding: 20px;
   width: 120px;
-  height: 60px;
+  height: 45px;
   transition: all 0.5s;
   cursor: pointer;
   margin: 5px;
 
-/*    position: relative;
-    text-decoration: none;
-    width: 125px;
-    padding: 3.7px;
-    text-align: center;
-    letter-spacing: 2px;
-    background-color: #00ace6;
-    margin-right: 5px;
-    border-radius: 3.7px;
-    cursor: pointer;*/
+/*  color: #ffffff;
+  position: relative;
+  text-decoration: none;
+  width: 125px;
+  padding: 3.7px;
+  text-align: center;
+  letter-spacing: 2px;
+  background-color: #00ace6;
+  margin-right: 5px;
+  border-radius: 3.7px;
+  cursor: pointer;*/
+
 }
 
 .button span {
