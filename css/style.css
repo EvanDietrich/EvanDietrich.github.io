@@ -55,3 +55,14 @@ body {
 
 
 
+/* Media query for responsive design on mobile devices */
+@media only screen and (max-width: 500px) {
+  /* For mobile phones: */
+  img, .gifs {
+    width: 90%;
+  }
+  #text {
+    padding-bottom: 400px;
+  }
+}
+
