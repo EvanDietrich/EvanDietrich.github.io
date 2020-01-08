@@ -40,7 +40,121 @@
           <div class="thumbnail__content">
               <h1 class="thumbnail__caption">Caption goes here</h1>
           </div>
+<<<<<<< HEAD
       </div>
+=======
+    		</div>
+
+    		<div id="text2">
+
+    			<div id="headhead" style="margin-top:-60px;">Recent Work</div>
+    			<div id="descriptionx">Academic and <a id='mitll' title="MITLL" href="https://www.ll.mit.edu">personal</a>
+
+    			<br><br><br>
+
+                    <!-- Card deck -->
+          <div class="row justify-content-center">
+            <div class="card-deck" style="width: 60%;">
+              <div class="card mb-4" style="width: 18rem;">
+                <div class="view overlay">
+                  
+                  <img class="card-img-top" src="/0001.jpg" alt="Card image cap">
+                  
+                  <a href="#!">
+                    <div class="mask rgba-white-slight"></div>
+                  </a>
+
+                </div>
+
+                <!--Card content-->
+                <div class="card-body">
+                  <h4 class="card-title">ENVOY</h4>
+                  <p class="card-text">Enabling Natural-language Versatility & Opportunity</p>
+                  <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+                  <!-- <button type="button" class="btn btn-light-blue btn-md">Read more</button> -->
+
+                </div>
+              </div>
+              <!-- Card -->
+
+              <!-- Card -->
+              <div class="card mb-4" style="width: 18rem;">
+
+                <!--Card image-->
+                <div class="view overlay">
+                  <img class="card-img-top" src="images/0001-2.jpg" alt="Card image cap">
+                  <a href="#!">
+                    <div class="mask rgba-white-slight"></div>
+                  </a>
+                </div>
+
+                <div class="card-body">
+                  <h4 class="card-title">CIRCLE</h4>
+                  <p class="card-text">Calibration of Infrared Cameras for Lasercom Evaluation</p>
+                  <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+                  <!-- <button type="button" class="btn btn-light-blue btn-md">Read more</button> -->
+
+                </div>
+              </div>
+              <!-- Card -->
+
+            </div>
+
+          <!-- Card deck -->
+        </div>
+            
+<!--       			<p class="accordion">Brain-Computer Interface</p>
+      			<div class="panel">
+      			  • Led a dozen students in designing & fabricating EEG headsets to measure electrical activity across the surface of the human brain
+      			  <br>
+      			  • Created a software application that detects distinct brain states (i.e. resting, focused), ensuring proof-of-concept pipeline before beginning to prototype medical+industry applications
+      			</div>
+
+      			<p class="accordion">CIRCLE</p>
+      			<div class="panel">
+        			• Designed and developed automated software system in C++ to set hardware configurations and run calibration tests on lasercom terminals, replacing 3-week manual testing with overnight calibration.
+        			<br>
+        			• Implemented MATLAB signal processing algorithms to make real-time corrections on transmissions.
+        			<br>
+        			• Programmed API functions, user interface, and request-handler components of client-server system.
+      			</div>
+
+      			<p class="accordion">ENVOY</p>
+      			<div class="panel">
+        			• ENVOY is a modular system that utilizes machine learning, computer vision, & motion tracking to enable fluid communication between Deaf ASL-signers & English-speaking individuals
+        			<br>
+        			• ENVOY won Best Overall Poster in the Poster Presentation Round (July 14th)
+        			<br>
+        			• ENVOY won First Place in the Shark Tank Round (July 26th), securing MIT funding for launch during the Academic Year
+      			</div> -->
+
+      			<script>
+                document.addEventListener("DOMContentLoaded", function(event) { 
+                    var acc = document.getElementsByClassName("accordion");
+                    var panel = document.getElementsByClassName('panel');
+                    for (let i = 0; i < acc.length; i += 1) {
+                        acc[i].onclick = function () {
+                            this.classList.toggle("active");
+                            this.nextElementSibling.classList.toggle("show");
+                            for (let j = 0; j < acc.length; j += 1) {
+                                if (i !== j) {
+                                    acc[j].style.display = acc[j].style.display === 'none' ? 'block' : 'none';
+                                }
+                            }
+                        }
+                    }
+                });
+            </script>
+      			<br>
+      			<div id="links2">
+        			<a onclick="myFunction()" title="Home"><i class="fas fa-home fa-2x"></i></a>
+    			</div>
+
+    		</div>
+
+    		<br><br><br><br>
+
+>>>>>>> parent of 7961a98... Update index.html
   </div>
 </body>
 
