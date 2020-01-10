@@ -50,57 +50,34 @@
         </div>
 
         <div id="text2">
-          <div id="headhead" style="margin-top:-60px;">Recent Work</div>
+          <div id="headhead" style="margin-top:-40px;">Recent Work</div>
           <div id="descriptionx">Academic and <a id='mitll' title="MITLL" href="https://www.ll.mit.edu">personal</a>
           <!-- Card deck -->
         </div>
             
-<!--            <p class="accordion">Brain-Computer Interface</p>
-            <div class="panel">
-              • Led a dozen students in designing & fabricating EEG headsets to measure electrical activity across the surface of the human brain
-              <br>
-              • Created a software application that detects distinct brain states (i.e. resting, focused), ensuring proof-of-concept pipeline before beginning to prototype medical+industry applications
-            </div>
-
-            <p class="accordion">CIRCLE</p>
-            <div class="panel">
-              • Designed and developed automated software system in C++ to set hardware configurations and run calibration tests on lasercom terminals, replacing 3-week manual testing with overnight calibration.
-              <br>
-              • Implemented MATLAB signal processing algorithms to make real-time corrections on transmissions.
-              <br>
-              • Programmed API functions, user interface, and request-handler components of client-server system.
-            </div>
-
-            <p class="accordion">ENVOY</p>
-            <div class="panel">
-              • ENVOY is a modular system that utilizes machine learning, computer vision, & motion tracking to enable fluid communication between Deaf ASL-signers & English-speaking individuals
-              <br>
-              • ENVOY won Best Overall Poster in the Poster Presentation Round (July 14th)
-              <br>
-              • ENVOY won First Place in the Shark Tank Round (July 26th), securing MIT funding for launch during the Academic Year
-            </div> -->
-
-            <script>
-                document.addEventListener("DOMContentLoaded", function(event) { 
-                    var acc = document.getElementsByClassName("accordion");
-                    var panel = document.getElementsByClassName('panel');
-                    for (let i = 0; i < acc.length; i += 1) {
-                        acc[i].onclick = function () {
-                            this.classList.toggle("active");
-                            this.nextElementSibling.classList.toggle("show");
-                            for (let j = 0; j < acc.length; j += 1) {
-                                if (i !== j) {
-                                    acc[j].style.display = acc[j].style.display === 'none' ? 'block' : 'none';
-                                }
+        <script>
+            document.addEventListener("DOMContentLoaded", function(event) { 
+                var acc = document.getElementsByClassName("accordion");
+                var panel = document.getElementsByClassName('panel');
+                for (let i = 0; i < acc.length; i += 1) {
+                    acc[i].onclick = function () {
+                        this.classList.toggle("active");
+                        this.nextElementSibling.classList.toggle("show");
+                        for (let j = 0; j < acc.length; j += 1) {
+                            if (i !== j) {
+                                acc[j].style.display = acc[j].style.display === 'none' ? 'block' : 'none';
                             }
                         }
                     }
-                });
-            </script>
-            <br>
-            <div id="links2">
-              <a onclick="myFunction()" title="Home"><i class="fas fa-home fa-2x" style=" color: #00ace6;"></i></a>
-          </div>
+                }
+            });
+        </script>
+        <br>
+        
+        <div id="links2">
+          <a onclick="myFunction()" title="Home"><i class="fas fa-home fa-2x" style=" color: #00ace6;"></i></a>
+        </div>
+
   </div>
 
   <script>
@@ -112,8 +89,6 @@
     $('#title').hide().delay(500).fadeIn(1500);
     $('#description').hide().delay(1000).fadeIn(2000);
     $('#links').hide().delay(2000).fadeIn(2000);
-    $('#nav').hide().delay(2000).fadeIn(2000);
-    $('#nav2').hide().delay(2000).fadeIn(2000);
 
     function myFunction() 
     {
