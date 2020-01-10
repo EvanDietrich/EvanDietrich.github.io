@@ -31,11 +31,11 @@ a:hover {
 }
 
 .bg-c-blue {
-    background: linear-gradient(45deg,#4099ff,#73b4ff);
+    background: linear-gradient(45deg,#16bdda,#67e4d8);
 }
 
 .bg-c-green {
-    background: linear-gradient(45deg,#2ed8b6,#59e0c5);
+    background: linear-gradient(45deg,#7a0000,#a72525);
 }
 
 .bg-c-yellow {
@@ -43,7 +43,7 @@ a:hover {
 }
 
 .bg-c-pink {
-    background: linear-gradient(45deg,#154C8A,#15729b);
+    background: linear-gradient(45deg,#000D1D,#003775);
 }
 
 
