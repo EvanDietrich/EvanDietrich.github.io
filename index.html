@@ -33,7 +33,11 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 </head>
 
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Montserrat'>
+<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,600,700,800'>
+<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css'>
 
 
 <body>
@@ -98,29 +102,27 @@
 
         <div class="container">
             <div class="row justify-content-md-center">
-                <div onclick="document.getElementById('id01').style.display='block'" class="col-4">
+                <div for="dialog_state" class="col-4">
                     <div class="card bg-c-blue order-card">
                         <div class="card-block justify-content-center">
                             <h3 class="card-title">ENVOY</h3>
 <!--                             <h2 class="text-right"><i class="fa fa-cart-plus f-left"></i></h2>
- -->                        <p class="m-b-0">Machine Learning for ASL</p>
+ -->                        <p class="m-b-0">Sign Language Translation via Deep Learning</p>
                         </div>
                     </div>
 
-                  <div id="id01" class="w3-modal">
-                    <div class="w3-modal-content w3-card-4">
-                      <header class="w3-container w3-teal"> 
-                        <span onclick="document.getElementById('id01').style.display='none'" 
-                        class="w3-button w3-display-topright">&times;</span>
-                        <h2>Modal Header</h2>
-                      </header>
-                      <div class="w3-container">
-                        <p>You have two options to close this modal:</p>
-                        <p>Click on the "x" or click anywhere outside of the modal!</p>
+                  <div id='dialog'>
+                    <label id="dlg-back" for="dialog_state"></label>
+                    <div id='dlg-wrap'>
+                      <label id="dlg-close" for="dialog_state"><i class="icon ion-ios-close-empty"></i></label>
+                      <h2 id='dlg-header'>Are you sure?</h2>
+                      <div id='dlg-content'>You are about to kill a puppy, that's some serious shit. Have you really thought this through?</div>
+                      <div id='dlg-prompt'>
+                        <div class='button positive'><i class="icon ion-ios-checkmark-empty"></i> Yes, let's do it!</div>
+                        <div class='button'><i class="icon ion-ios-close-empty"></i> No, I'll reconsider</div>
                       </div>
                     </div>
                   </div>
-                </div>
                 
                 <div class="col-4">
                     <div class="card bg-c-green order-card">
@@ -191,6 +193,8 @@
 <!-- scripts -->
   <script src="particles.js"></script>
   <script src="js/app.js"></script>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src="index.js"></script>
 
 </body>
 </html>
