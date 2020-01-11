@@ -56,6 +56,21 @@
         </div>
             
         <script>
+
+
+
+
+
+          // Get the modal
+          var modal = document.getElementById('id01');
+
+          // When the user clicks anywhere outside of the modal, close it
+          window.onclick = function(event) {
+            if (event.target == modal) {
+              modal.style.display = "none";
+            }
+          }
+
             document.addEventListener("DOMContentLoaded", function(event) { 
                 var acc = document.getElementsByClassName("accordion");
                 var panel = document.getElementsByClassName('panel');
@@ -71,13 +86,28 @@
                     }
                 }
             });
+
+
+
         </script>
         <br>
 
-
+          <div id="id01" class="w3-modal">
+            <div class="w3-modal-content w3-card-4">
+              <header class="w3-container w3-teal"> 
+                <span onclick="document.getElementById('id01').style.display='none'" 
+                class="w3-button w3-display-topright">&times;</span>
+                <h2>Modal Header</h2>
+              </header>
+              <div class="w3-container">
+                <p>You have two options to close this modal:</p>
+                <p>Click on the "x" or click anywhere outside of the modal!</p>
+              </div>
+            </div>
+          </div>
 
         <div class="container">
-            <div class="row justify-content-md-center">
+            <div onclick="document.getElementById('id01').style.display='block'" class="row justify-content-md-center">
                 <div class="col-4">
                     <div class="card bg-c-blue order-card">
                         <div class="card-block justify-content-center">
@@ -112,7 +142,7 @@
                     <div class="card bg-c-pink order-card">
                         <div class="card-block justify-content-center">
                             <h3 class="card-title">'Code for Good' Hackathon Winner</h3>
-                            <p class="m-b-0">'J.P. Morgan Chase & Co.</p>
+                            <p class="m-b-0">J.P. Morgan Chase & Co.</p>
                         </div>
                     </div>
                 </div>
