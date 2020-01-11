@@ -76,6 +76,7 @@ a:hover {
 
 
 
+
 #console {display: none;}
 #dialog {
   position: absolute;
@@ -239,7 +240,7 @@ a:visited {
   text-align: center;
   font-size: 28px;
   padding: 20px;
-  width: 200px;
+  width: 95%;
   transition: all 0.5s;
   cursor: pointer;
 }
