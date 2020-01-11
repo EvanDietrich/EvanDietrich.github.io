@@ -30,20 +30,20 @@ a:hover {
     color: #fff;
 }
 
-.bg-c-blue {
-    background: linear-gradient(45deg,#16bdda,#67e4d8);
+.bg-c-mitll {
+    background: linear-gradient(45deg,#0C2433,#C2C0BF);
 }
 
-.bg-c-green {
-    background: linear-gradient(45deg,#7a0000,#a72525);
-}
-
-.bg-c-yellow {
-    background: linear-gradient(45deg,#FFB64D,#ffcb80);
-}
-
-.bg-c-pink {
+.bg-c-jpm {
     background: linear-gradient(45deg,#000D1D,#003775);
+}
+
+.bg-c-tuftsuniv {
+    background: linear-gradient(45deg,#5191CE,#ECECEC);
+}
+
+.bg-c-personalproj {
+    background: linear-gradient(45deg,#16bdda,#67e4d8);
 }
 
 
