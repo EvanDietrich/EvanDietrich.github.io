@@ -240,7 +240,9 @@ a:visited {
   text-align: center;
   font-size: 28px;
   padding: 20px;
+  color: #ffffff;
   width: 95%;
+  height: 80%;
   transition: all 0.5s;
   cursor: pointer;
 }
