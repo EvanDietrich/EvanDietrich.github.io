@@ -37,6 +37,21 @@
 
 
 <body>
+
+  <input type="checkbox" name="dialog_state" id="dialog_state" class="dialog_state">
+<div id='dialog'>
+  <label id="dlg-back" for="dialog_state"></label>
+  <div id='dlg-wrap'>
+    <label id="dlg-close" for="dialog_state"><i class="icon ion-ios-close-empty"></i></label>
+    <h2 id='dlg-header'>Are you sure?</h2>
+    <div id='dlg-content'>You are about to kill a puppy, that's some serious shit. Have you really thought this through?</div>
+    <div id='dlg-prompt'>
+      <div class='button positive'><i class="icon ion-ios-checkmark-empty"></i> Yes, let's do it!</div>
+      <div class='button'><i class="icon ion-ios-close-empty"></i> No, I'll reconsider</div>
+    </div>
+  </div>
+</div>
+
 <main id='main' class='main_area'>
 
   <div id="particles-js">
@@ -83,7 +98,7 @@
 
         <div class="container">
             <div class="row justify-content-md-center">
-                <div for="dialog_state" class="col-4">
+                <div class="col-4" for="dialog_state" >
                     <div class="card bg-c-blue order-card">
                         <div class="card-block justify-content-center">
                             <h3 class="card-title">ENVOY</h3>
@@ -91,19 +106,6 @@
  -->                        <p class="m-b-0">Sign Language Translation via Deep Learning</p>
                         </div>
                     </div>
-
-                  <div id='dialog'>
-                    <label id="dlg-back" for="dialog_state"></label>
-                    <div id='dlg-wrap'>
-                      <label id="dlg-close" for="dialog_state"><i class="icon ion-ios-close-empty"></i></label>
-                      <h2 id='dlg-header'>Are you sure?</h2>
-                      <div id='dlg-content'>You are about to kill a puppy, that's some serious shit. Have you really thought this through?</div>
-                      <div id='dlg-prompt'>
-                        <div class='button positive'><i class="icon ion-ios-checkmark-empty"></i> Yes, let's do it!</div>
-                        <div class='button'><i class="icon ion-ios-close-empty"></i> No, I'll reconsider</div>
-                      </div>
-                    </div>
-                  </div>
                 
                 <div class="col-4">
                     <div class="card bg-c-green order-card">
