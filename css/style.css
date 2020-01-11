@@ -172,6 +172,28 @@ h2#dlg-header {
   filter: blur(6px);
 }
 
+#main {
+  height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  background: url("https://farm6.staticflickr.com/5688/21515632899_94e4ddb78a_o.jpg") no-repeat center center;
+  background-size: cover;
+}
+#main .center {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+
+.icon {
+  vertical-align: middle;
+  line-height: inherit;
+  font-size: 1.75em;
+}
+
+
 
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
@@ -208,17 +230,18 @@ a:visited {
 }
 
 .button {
-  border-radius: 4px;
-  background-color: #f4511e;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 1px 2.94px 0.06px rgba(4,26,55,0.16);
+  box-shadow: 0 1px 2.94px 0.06px rgba(4,26,55,0.16);
   border: none;
-  color: #FFFFFF;
+  margin-bottom: 30px;
+  -webkit-transition: all 0.3s ease-in-out;
   text-align: center;
   font-size: 28px;
   padding: 20px;
   width: 200px;
   transition: all 0.5s;
   cursor: pointer;
-  margin: 5px;
 }
 
 .button span {
