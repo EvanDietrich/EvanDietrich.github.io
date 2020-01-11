@@ -236,12 +236,12 @@ a:visited {
   margin-bottom: 30px;
   -webkit-transition: all 0.3s ease-in-out;
   text-align: center;
-  font-size: 28px;
+  font-size: 5vw;
   padding: 20px;
   color: #ffffff;
   width: 95%;
-  height: 80%;
-  transition: all 0.5s;
+/*  height: 80%;
+*/transition: all 0.5s;
   cursor: pointer;
 }
 
