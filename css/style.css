@@ -148,7 +148,6 @@ a:hover {
 }
 h2#dlg-header {
   font: 200 2em/1em Raleway, Sans-Serif;
-  text-align: left;
   text-transform: initial;
   letter-spacing: -0.025em;
   margin: 0 0 1rem;
@@ -236,7 +235,7 @@ a:visited {
   border: none;
   margin-bottom: 30px;
   -webkit-transition: all 0.3s ease-in-out;
-  text-align: center;
+  text-align: left;
   font-size: 22px;
   padding: 20px;
   color: #ffffff;
