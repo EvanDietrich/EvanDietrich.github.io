@@ -147,7 +147,8 @@ a:hover {
   cursor: pointer;
 }
 h2#dlg-header {
-  font: 200 2em/1em Raleway, Open Sans, Arial, Sans-Serif;
+  font: 200 2em/1em Raleway, Sans-Serif;
+  text-align: left;
   text-transform: initial;
   letter-spacing: -0.025em;
   margin: 0 0 1rem;
