@@ -25,12 +25,6 @@ a:hover {
 
 }
 
-iframe.example {
-    width: 100%;
-    height: 600px; 
-    overflow: hidden;
-} 
-
 .order-card {
     color: #fff;
 }
