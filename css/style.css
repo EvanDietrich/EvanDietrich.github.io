@@ -132,7 +132,7 @@ iframe.example {
   opacity: 0;
   padding-top: 0;
   padding-bottom: 0;
-  overflow: hidden;
+  overflow: scroll;
   transition: all .5s;
 }
 #dlg-close {
@@ -155,6 +155,7 @@ h2#dlg-header {
   font-weight: 300;
   font-style: italic;
   letter-spacing: 0.015em;
+  line-height: 1.6;
   height: 100%;
 }
 #dlg-prompt .button {
