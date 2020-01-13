@@ -35,11 +35,11 @@ iframe.example {
 }
 
 .bg-c-blue {
-    background: linear-gradient(45deg,#16bdda,#67e4d8);
+    background: linear-gradient(45deg,#3f0000,#720000);
 }
 
 .bg-c-green {
-    background: linear-gradient(45deg,#A1100D,#B35654);
+    background: linear-gradient(45deg,#0C2433,#C2C0BF);
 }
 
 .bg-c-yellow {
