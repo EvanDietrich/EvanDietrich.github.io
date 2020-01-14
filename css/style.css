@@ -43,7 +43,7 @@ iframe.example {
 }
 
 .bg-c-yellow {
-    background: linear-gradient(45deg,#417dc1,#909090);
+    background: linear-gradient(45deg,#909090,#417dc1);
 }
 
 .bg-c-pink {
