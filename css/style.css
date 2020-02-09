@@ -123,6 +123,7 @@ iframe.example {
   transform: translateY(-50%);
   width: 75%;
   /*  height: 80%;*/ 
+  max-height: 80%;
   padding: 2rem;
   border-radius: 0.25rem;
   /*border: 1px solid #969696;*/
