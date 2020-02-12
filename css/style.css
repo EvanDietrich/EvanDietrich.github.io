@@ -245,7 +245,7 @@ a:visited {
 .button span {
   cursor: pointer;
   display: inline-block;
-  position: relative;
+  position: absolute;
   transition: 0.5s;
 }
 
@@ -471,7 +471,7 @@ h4.dateText {
   height: 3.6rem;
   line-height: 3.6rem;
   margin: 0 5px;
-  position: relative;
+  position: absolute;
   text-align: center;
   -webkit-user-select: none;
      -moz-user-select: none;
