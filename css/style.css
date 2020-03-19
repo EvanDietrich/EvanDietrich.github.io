@@ -356,7 +356,7 @@ canvas{
   }
 
   #title {
-    font-size: 28px;
+    font-size: 24px;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
   }
@@ -426,7 +426,7 @@ li {
 }
 
 #title {
-    font-size: 72px;
+    font-size: 64px;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
 }
@@ -459,6 +459,11 @@ li {
 h4.dateText {
     font-style: italic;
     margin-left: 5%;
+}
+
+h4
+{
+   text-align: center;
 }
 
 /* Wrapper */
