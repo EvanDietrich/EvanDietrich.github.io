@@ -393,7 +393,9 @@ canvas{
     width: 90%;
   }
   #text {
-    padding-bottom: 250px;
+    padding-bottom: 150px;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 
   #title {
