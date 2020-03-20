@@ -392,8 +392,15 @@ canvas{
   img, .gifs {
     width: 90%;
   }
+
   #text {
     padding-bottom: 150px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  #text {
+    padding-bottom: 50px;
     margin-left: 5%;
     margin-right: 5%;
   }
