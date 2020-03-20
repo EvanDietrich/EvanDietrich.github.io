@@ -407,7 +407,10 @@ img {
 }
 
 h3 {
-  /*margin-left: 5%;*/
+  font: 120 2em/1em Raleway, Sans-Serif;
+  text-transform: initial;
+  letter-spacing: -0.025em;
+  margin: 0 0 1rem;
 }
 
 li {
