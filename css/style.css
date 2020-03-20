@@ -309,6 +309,39 @@ a:visited {
   justify-content: center;
 }
 
+
+.docs-menu {
+  h4 {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+      font-size: 0.9rem;
+      line-height: 1.4;
+      font-weight: 400;
+      margin: 0;
+      padding: 4px 0 4px 0;
+      &.active {
+        a {
+          color: lighten(#00ace6, 10%);
+          font-weight: 400;
+        }
+      }
+      a {
+        color: $black;
+        &:hover {
+          color: #00ace6;
+        }
+      }
+    }
+  }
+}
+
+
 button {
   height: 20px;
   width: 100px;
