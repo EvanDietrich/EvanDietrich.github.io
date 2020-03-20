@@ -406,7 +406,7 @@ img {
   width: 15%;
 }
 
-h3 {
+h3#title-summary {
   font: 120 2em/1em Raleway, Sans-Serif;
   text-transform: initial;
   letter-spacing: -0.025em;
