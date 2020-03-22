@@ -176,9 +176,10 @@ h2#dlg-header {
   height: 100vh;
   width: 100%;
   box-sizing: border-box;
-  overflow: hidden;
+  overflow: auto;
   background-size: cover;
 }
+
 #main .center {
   position: absolute;
   top: 50%;
@@ -302,7 +303,7 @@ a:visited {
 
 #wrapper {
   width: 100%;
-  height: 400px;
+  height: 100%;
   border: 1px solid black;
   display: flex;
   align-items: center;
@@ -455,7 +456,7 @@ hr {
 
 #links2 {
       color: #0077b3;
-      margin-top: 10px;
+      margin-bottom: 10px;
       cursor: pointer;
 }
 
@@ -474,8 +475,8 @@ hr {
 }
 
 #text2 {
-    position: absolute;
-    margin: auto;
+    position: fixed;
+    margin: 1%;
     top: 0;
     right: 0;
     bottom: 0;
@@ -483,7 +484,7 @@ hr {
     height: fit-content;
     width: 100%;
     text-align: center;
-    display: block;
+    display: grid;
     background: transparent;
 }
 
