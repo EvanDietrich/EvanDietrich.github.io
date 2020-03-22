@@ -484,7 +484,7 @@ hr {
 /*    overflow-y:scroll;
     overflow-x:hidden;*/
     overflow: scroll;
-    height: auto;
+    height: max-content;
     width: 100%;
     text-align: center;
     display: block;
