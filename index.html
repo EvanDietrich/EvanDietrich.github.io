@@ -1,138 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144929033-1"></script>
-  <script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144929033-1"></script>
+    <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'UA-144929033-1');
-  </script>
+    </script>
 
-  <meta charset="utf-8">
-  <title>Evan Dietrich</title>
+    <!-- Basic Page Needs –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title>Evan Dietrich</title>
+    <meta name="description" content="Evan's homepage">
+    <meta name="author" content="Evan Dietrich">
+    <link rel="icon" type="image/png" href="/images.nosync/icon.png">
 
-  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css'>
+    <!-- Mobile Specific Metas
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <style>@import url('https://fonts.googleapis.com/css?family=Raleway:300');</style>
+    <!-- CSS –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tabify.css">
 
-  <!-- Latest compiled and minified CSS -->
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
-  <link rel="icon" type="image/png" href="../images.nosync/webimage.png">
+    <!-- FONT  -->    
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap' rel='stylesheet' type ='text/css'>
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-  <!-- jQuery library -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-  <!-- Latest compiled JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 </head>
-
 <body>
 
-  <main id='main' class='main_area'>
-    <div class='center'>
-      <div id="particles-js">
-        <div id="text">
-          <div id="title">Evan Dietrich</div>
-          <div id="description">I'm an Undergrad CS Researcher at <a id='mitll' title="MITLL" href="https://www.ll.mit.edu">MIT Lincoln Laboratory</a><br></div>
-
-          <div id="links">
-            <a href="https://linkedin.com/in/evandietrich" target="_blank" title="LinkedIn"><i class="fab fa-linkedin fa-2x"></i></a>
-            <a href="https://github.com/EvanDietrich" target="_blank" title="GitHub"><i class="fab fa-github-square fa-2x"></i></a>
-            <a href="mailto:evand@mit.edu" title="Email"><i class="fas fa-envelope-square fa-2x"></i></a>
-            <a href="#/" onclick="myFunction()" title="Projects"><i class="fas fa-folder-open fa-2x"></i></a>
-          </div>
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="container">
+        <div class="header">
+            <h3>evandietrich.dev</h3>
         </div>
 
-        <div id="text2">
-          <div class="container" style="text-align:left;">
-
-            <h1 class="title">Recent Work</h1>
-
-            <p><i>A non-exhaustive collection from professional, academic, and personal domains</i></p>
-            <hr/>
-
-            <div class="summary mb-2">
-              <h3 class="title-summary"><a href="#ex1" rel="modal:open">Automating Lasercom Terminal Camera Calibration</a></h3>
-              <p>Data transmission using lasers is complicated. High frame-rate infrared cameras must precisely capture light beams sent under any atmospheric condition, in the span of hundreds of miles. This is accomplished by precisely calibrating lasercom terminals via a series of manual hardware configuration tests. During Summer 2019, myself and a team of 3 other interns at MIT Lincoln Laboratory built a system to automate the calibration process, reducing the time it takes to run a test series from 2-3 weeks, to overnight completion.</p>
-            </div>
-
-            <div class="summary mb-2">
-              <h3 class="title-summary"><a href="//localhost:1313/work/configure/">Code for Good</a></h3>
-              <p>In October 2019, I was introduced with 4 other CS undergrads at J.P. Morgan Chase & Co's 'Code for Good' Hackathon, before being pit against 13 other teams to build a program that fulfilled the needs of a non-profit organization, in 24 hours. Taking charge of our team, I broke our build period down into sprints as we began work in bolstering user engagement and increasing the likelihood of our client's users in graduating from their unique debt management programs. After rotations by tech leads and our clients, our team was one of four selected for the final presentation stage. After 30 hours awake and final presentations, we were awarded second place for our client.</p>
-            </div>
-
-            <div class="summary mb-2">
-              <h3 class="title-summary"><a href="//localhost:1313/work/specimen/">Improving American Sign Language Recognition with Facial Features</a></h3>
-              <p>Current approaches to the machine translation of American Sign Language neglect essential language nuances, data-processing techniques, and make decisions based on the preoccupations of the hearing community, instead of being designed in a user-centric manner. In Summer 2019, I led a team of 6 interns at MIT Lincoln Laboratory to win the I3C Challenge, recieving funding to continue our project and work for the Lab during the academic year, researching and developing optimal approaches towards full ASL translation.</p>
-            </div>
-
-            <div class="summary mb-2">
-              <h3 class="title-summary"><a href="//localhost:1313/work/example/">Brain-Computer Interface Heatmap Display</a></h3>
-              <p>Content will appear here soon.</p>
-            </div>
-
-            <div class="summary mb-2">
-              <h3 class="title-summary"><a href="//localhost:1313/work/example/">Coursework in Machine Learning</a></h3>
-              <p>Another particular area of interest. Through academic settings, I've gained experience in the following: Linear & polynomial regression, sentiment analysis, gradient descent, linear classification, perceptron models, decision trees, boosting, feature engineering, clustering, support vector machines, kernel functions, neural networks, reinforcement learning.</p>
-            </div>
-
-            <div class="summary mb-2">
-              <h3 class="title-summary"><a href="//localhost:1313/work/example/">Teaching Work</a></h3>
-              <p>In my first two years at Tufts, I worked as a Teaching Assistant for Discrete Mathematics &amp; Intro to Computer Science. Leading labs &amp; office hours for hundreds of undergraduate/graduate students served as my basis in communicating higher-level technical understanding to peers with varying experience levels &amp; problem-solving approaches.</p>
-            </div>
-          </div>   
-          <hr/>
-
-          <div id="links2">
-          <a onclick="myFunction()" title="Home"><i class="fas fa-home fa-2x" style=" color: #00ace6;"></i></a>
-          </div>
-
+        <div id="nav">
+            <ul>
+                <li class="active"><a href="#about">Home</a></li>
+                <li><a href="#publications">Recent Work</a></li>
+                <li><a href="#bio">Academics</a></li>
+                <li><a href="#recognition">Recognition</a></li>
+            </ul>
         </div>
 
-      </div>
+        <div class="row" style="margin-top: 0rem;">
+            <div class="four columns sidebar">
+                <br>
+                <img src="images.nosync/currentbw.jpg" alt="Evan's photo" width="170" height="">
+                <p></p>
+                <ul class="contact">
+                <tbody>
+                    <tr>
+                    <li>email: <a href="mailto:evand@mit.edu?body=Hi Evan,%0D%0A"><u style="color:black">evand@mit.edu</u></a></li>
+                    <li>résumé: <a href="/images.nosync/Dietrich,Evan_Resume.pdf" target="_blank"><u style="color:black">download</u></a></li>
+                    <br>
+                    <li><a href="https://github.com/EvanDietrich" target="_blank">GitHub</a> | <a href="https://linkedin.com/in/evandietrich" target="_blank">LinkedIn</a></li>
+                </ul>
+
+            </div>
+
+            <div class="eight columns">
+                <div id="about">
+                    <p></p>
+                    <b>Hi, my name is Evan</b>
+                    <p>I'm an undergrad researcher at <a href="https://www.ll.mit.edu" target="_blank">MIT Lincoln Laboratory</a>. My current work focuses on improving the machine translation of American Sign Language.</p>
+                    <p>In Summer 2020, I'll be working remotely as a SWE intern at <a href="https://www.jpmorganchase.com" target="_blank">JPMorgan Chase</a>. I am particularly interested in developing machine learning algorithms and tools for analyzing financial dynamics.</p>
+                    <p><u>I am actively considering New Grad SWE roles</u>, and have an anticipated graduation in May 2021. I will complete my undergrad career with a B.S. in Computer Science, and a B.S. in Cognitive & Brain Sciences from <a href="https://www.tufts.edu" target="_blank">Tufts University</a>.</p>
+                    <br><br>
+                </div>
+
+                <div id="publications">
+                    <p></p>
+                    <b>A non-exhaustive collection from professional, academic, and personal domains</b>
+                    <section>
+                      <details>
+                        <summary>Automating Lasercom Terminal Camera Calibration</summary>
+                        <div>
+                          <img src="images.nosync/laser512.jpg" alt="Lasercom photo" width="" height="">
+                          <p>A system that automates the calibration of infrared cameras, central to data transmission via laser beam. Our team took the runtime of a calibration test series from 2-3 weeks, down to overnight completion.<br><br><a href="/images.nosync/Summer-Work-Poster.pdf" target="_blank">Poster</a></p>
+                        </div>
+                      </details>
+                      <details>
+                        <summary>Improving American Sign Language Recognition with Facial Features</summary>
+                        <div>
+                          <img src="images.nosync/laser512.jpg" alt="Lasercom photo" width="" height="">
+                          <p>Current approaches to the machine translation of ASL neglect essential language nuances, data-processing techniques, and make decisions based on the preoccupations of the hearing community.<br><br><a href="/images.nosync/ENVOY-Poster.pdf" target="_blank">Poster</a></p>
+                        </div>
+                      </details>
+                      <details>
+                        <summary>Code for Good Hackathon</summary>
+                        <div>
+                          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/344846/_alfred.jpg" />
+                          <p>Placed second overall in J.P. Morgan Chase & Co's 'Code for Good' Hackathon, a competition with 13 other teams to build a program to fulfill the needs of a non-profit organization within 24 hours.<br><br><a href="/images.nosync/VisualizerDemo.mp4" target="_blank">Video</a></p>
+                        </div>
+                      </details>
+                      <details>
+                        <summary>Brain-Computer Interface Heatmap Display</summary>
+                        <div>
+                          <img src="images.nosync/bci512.jpg" alt="BCI photo" >
+                          <p>A user interface that provides visualization of brain activity in real time. Software shown collects brainwave data from our EEG headset.<br><br><a href="/images.nosync/VisualizerDemo.mp4" target="_blank">Video Demo</a></p>
+                        </div>
+                      </details>
+                      <details>
+                        <summary>Senior Teaching Assistant for Tufts Computer Science Dept.</summary>
+                        <div>
+                          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/344846/_alfred.jpg" />
+                          <p>I have led labs & office hours for hundreds of undergraduate/graduate students taking core courses in Discrete Mathematics & Intro to Computer Science.<br><br><a href="/files/ENVOY-Poster.pdf" target="_blank">My performance feedback</a></p>
+                        </div>
+                      </details>
+                    </section>
+
+                </div>
+
+                <div id="bio">
+                    <p></p>
+                    <b>Some of my favorite courses taken</b>
+                    <section>
+                      <details>
+                        <summary>Computer Science</summary>
+                        <div>
+                        - Algorithms
+                        <br>
+                        - Machine Learning
+                        <br>
+                        - Data Structures
+                        <br>
+                        - Machine Structure & Assembly-Level Programming
+                        <br>
+                        - Computer System Security
+                        <br>
+                        - Programming Languages
+                        <br>
+                        - Directed Study I & II
+                        <br>
+                        - Intro to Computer Science
+                        <br>
+                        - Artifical Intelligence
+                        <br>
+                        </div>
+                      </details>
+
+
+                      <details>
+                        <summary>Math/Econ</summary>
+                        <div>
+                        - Logic
+                        <br>
+                        - Linear Algebra
+                        <br>
+                        - Discrete Mathematics
+                        <br>
+                        - Statistics
+                        <br>
+                        - Macroeconomics
+                        <br>
+                        - Microeconomics
+                        <br>
+                        - Calc I & II
+                        <br>
+                        - Computation Theory
+                        </div>
+                      </details>
+
+
+                      <details>
+                        <summary>Brain Science</summary>
+                        <div>
+                        - Statistics for Psychological Sciences
+                        <br>
+                        - Intro to Psychology
+                        <br>
+                        - Linguistics
+                        <br>
+                        - Senior Seminar
+                        <br>
+                        </div>
+                      </details>
+                    </section>
+                    
+                    <br><br>
+
+                </div>
+       
+
+                <div id="recognition">
+                    
+
+                </div>
+            </div>
+       
+        </div>
+        
+        <div class="footer">
+            Last updated May 11, 2020.
+        </div>
+           
 
     </div>
 
-    <script>
-      var z = document.getElementById("text2");
-      z.style.display = "none";
+    <script src="scripts/jquery.js" type="text/javascript" charset="utf-8"></script>
+    <script src="scripts/jquery.tabify.source.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+        // <![CDATA[
 
-      $('#title').hide().delay(500).fadeIn(1500);
-      $('#description').hide().delay(1000).fadeIn(2000);
-      $('#links').hide().delay(2000).fadeIn(2000);
+        $(document).ready(function () {
+            $('#nav').tabify();
+        });
 
-      function myFunction() 
-      {
-        var x = document.getElementById("text");
-        var y = document.getElementById("text2");
-
-        if (x.style.display === "none")
-        {
-            x.style.display = "block";
-            y.style.display = "none";
-        } 
-        else 
-        {
-            x.style.display = "none";
-            y.style.display = "block";
-        }
-      }
+        // ]]> 
     </script>
-  </main>
-  <!-- scripts -->
-  <script src="particles.js"></script>
-  <script src="js/app.js"></script>
-  <script src='js/jquery.min.js'></script>
-  <script src="index.js"></script>
 
+
+<!-- End Document –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<script type="text/javascript">
+function stc(e,linkIndex){if(document.images){var linkText;if(navigator.appName.toLowerCase()=="microsoft internet explorer"){linkText=e.innerText}else{linkText=e.textContent}if(linkText==""){if(e.firstChild){var firstChild=e.firstChild.nodeName.toUpperCase();if(firstChild=="IMG"){linkText="Image: "+getName(e.firstChild.getAttribute('src'))}}else{var nodeName=e.nodeName.toUpperCase();if(nodeName=="AREA"){linkText="ImageMap: "+e.href}}}if(linkText==""){linkText=e.href}(new Image()).src="/a/i/stg.gif?f="+escape(document.location.href)+"&t="+escape(e.href)+"&i="+linkIndex+"&n="+escape(trimString(linkText))}}function getName(s){if(s.lastIndexOf('/')>=0){return(s.substring(s.lastIndexOf('/')+1,s.length))}else{return(s)}}function trimString(s){return(s.replace(/^\s*/,"").replace(/\s*$/,""))}
+</script>
 </body>
 </html>

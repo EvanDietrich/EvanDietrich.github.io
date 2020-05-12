@@ -1,0 +1,5 @@
+.menu { padding: 0; clear: both; }
+			.menu li { display: inline; }
+			.menu li a { background: #a8a8a8; padding: 9px; float:left; border-right: 14.5px solid #ffffff; border-bottom: none; text-decoration: solid; color: #ffffff; font-weight: bold;}
+			.menu li.active a { background: #707070; }
+			.content { float: left; clear: both; border: 1px solid #ffffff; border-top: none; border-left: none; background: #eef; padding: 10px 20px 20px; width: 400px; }
