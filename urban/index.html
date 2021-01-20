@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/png" href="../assets/images/icon.png" >
+  <meta property="og:site_title" content="Evan Dietrich" />
+  <meta property="og:title" content="evandietrich.dev &ndash; Urban" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://evandietrich.dev/assets/images/og.png" />
+  <meta property="og:url" content="https://evandietrich.dev/urban/" />
+  <meta property="og:description" content="Hi, my name is Evan. I’m a Researcher at MIT and a Senior at Tufts studying Computer Science, Cognitive & Brain Sciences.My passions reside in predictive analytics, optimization engines, and algorithm development.
+"/>
+  <title>evandietrich.dev &ndash; Urban </title>
+  <meta name="description" content="Hi, my name is Evan. I’m a Researcher at MIT and a Senior at Tufts studying Computer Science, Cognitive & Brain Sciences.My passions reside in predictive analytics, optimization engines, and algorithm development.
+">
+  <!-- pre-load scripts -->
+    <script src="../js/init.js"></script>
+  <!-- styles -->
+    <link rel="stylesheet" href="../css/main.css">
+  <!-- webfonts -->
+  <link href='https://fonts.googleapis.com/css?family=Ubuntu:700' rel='stylesheet' type='text/css'>
+  <link rel="canonical" href="/urban/">
+</head>
+  <body>
+    <div class="container" id="urban">
+<!-- sidebar -->
+<nav>
+	<!-- brand -->
+	<header class="brand">
+		<h1 class="logo"><a href="../">ev.dev</a></h1>
+		<div class="icons">
+			<a class="icon github" href="https://github.com/evandietrich" title="Github" target="_blank">github</a>             
+			<a class="icon linkedin" href="https://linkedin.com/in/evandietrich" title="LinkedIn" target="_blank">linkedin</a>      
+		</div>
+	</header>
+	<!-- lede -->
+	<div id="lede">
+		<!-- intro -->
+		<section>
+        <p>Hi, my name is <strong>Evan</strong>. I’m a Researcher at <a href="https://mit.edu" target="_blank">MIT</a> and a Senior at <a href="https://tufts.edu" target="_blank">Tufts</a> studying Computer Science, Cognitive & Brain Sciences.</p>
+    <p>My interests reside in predictive analytics, optimization engines, and algorithm development.</p>
+      <a href="/about/" class="right light">about me &raquo;</a>
+    </section>
+		<!-- links -->
+		<section class="narrow">
+			<h3>Email</h3>
+			<p><a href="mailto:evand@mit.edu?body=Hi Evan,%0D%0A" title="Email">evand@mit.edu</a></p>
+		</section>
+		<section class="narrow">
+			<h3>Location</h3>
+			    <p><a href="../travel">Boston, MA</a></p>
+		</section>
+		<section class="narrow">
+			<h3>R&eacute;sum&eacute;</h3>
+			<p><a href="assets/resume/Evan_Dietrich_Resume.pdf" target="_blank" title="R&eacute;sum&eacute;">Download</a></p>
+		</section>
+      <section>
+        <h3>Experience</h3>
+          <p>
+            <a href="../jpmc/" class="nav-item">JP Morgan</a> <em class="detail">Remote</em>
+          </p>
+          <p>
+            <a href="../mit/" class="nav-item">MIT</a> <em class="detail">Cambridge, MA</em>
+          </p>
+          <p>
+            <a href="../impactlabs/" class="nav-item">Impact Labs</a> <em class="detail">New York, NY</em>
+          </p>
+          <p>
+            <a href="../mitll/" class="nav-item">MIT Lincoln Laboratory</a> <em class="detail">Lexington, MA</em>
+          </p>
+          <p>
+            <a href="../tuftscs/" class="nav-item">Tufts Dept. of Computer Science</a> <em class="detail">Boston, MA</em>
+          </p>
+      </section>
+      <section>
+        <h3>Research</h3>
+          <p>
+            <a href="../urban/" class="nav-item">Urban Planning</a> <em class="detail">Shan Jiang</em>
+          </p>
+          <p>
+            <a href="../spatial/" class="nav-item">Spatial Cognition</a> <em class="detail"></em>
+          </p>
+          <p>
+            <a href="../hri/" class="nav-item">Human-Robot Interaction</a> <em class="detail">Matthias Scheutz</em>
+          </p>
+      </section>
+    <script type="text/javascript">
+    var pages = [["jpmc", "../jpmc/"],["mit", "../mit/"],["impactlabs", "../impactlabs/"],["mitll", "../mitll/"],["tuftscs", "../tuftscs/"],["urban", "../urban/"],["spatial", "../spatial/"],["hri", "../hri/"],];
+		window.addEventListener("keydown", function(e) {
+			var current = "urban";
+			var i = pages.findIndex(function(item) {
+				return item[0] == current;
+			});
+			if (e.key === 'k') { // k, up
+				i--;
+				if (i < 0) {
+					i = pages.length-1;
+				}
+				window.location.href = pages[i][1];
+			} else if (e.key === 'j') { // j, down
+				i++;
+				if (i >= pages.length) {
+					i = 0;
+				}
+				window.location.href = pages[i][1];
+			}
+		}, true);
+		</script>
+	</div>
+	<!-- footer -->
+<footer>
+  <section>
+    <h3>Last Updated</h3>
+    <p class=\"timestamp\">
+    <script type="text/javascript">
+      var t = "Mon Jan 18, 2021 20:51 EST";
+      var ta = time_ago(t);
+      document.open();
+      if (!!ta)
+        document.write(ta);
+      else
+        document.write(t);
+      document.close();
+    </script>
+    <noscript>Mon Jan 18, 2021 20:51 EST</noscript></p>
+  </section>
+  <section>
+    <h3>Copyright</h3>
+    <p>&copy; Evan Dietrich, 2021</p>
+  </section>
+</footer>
+</nav>
+      <div class="gutter"></div>
+      <div id="page">
+	<!-- page header -->
+	<header>
+		<h1>Covid-19 Data Analytics Guiding Urban Policy</h1>
+	</header>
+		<article class="flip">
+    <div class="main">
+<section class="">
+    <h3 id="overview">Overview</h3>
+  <p>
+  In search of meaningful opportunities to leverage technology for social good, I joined Prof. Shan Jiang's data analytics research team to help reduce the spread of Covid-19.
+  </p>
+  <p>
+  Our team develops methods that translate big data (survey data, mobile phone metadata, WiFi augmented mobile positioning data, volunteered geographic information, etc.) into insights on smart and sustainable urban and community development in global cities.
+  </p>
+  <p>
+  Currently, I'm analyzing mass anonymized cellphone geo-location data from residents of the Greater Boston Area (as generously provided by a major tech company). Analysis yields support our efforts in determining optimal urban policies during the pandemic, as we isolate dense geo-location pressure points propagating the spread of Covid-19 in Boston.
+  </p>
+  <p>
+  We're better understanding the interaction of human activities with the built environment, and desigining responsive immediate intervention policies to ensure a smart, sustainable, resilient and healthy city.
+  </p>
+</section>
+    </div>
+    <div class="gutter"></div>
+    <aside>
+<section class="">
+    <h3 id="position">Position</h3>
+  <p>
+  Data Analytics Researcher
+  </p>
+</section>
+<section class=" narrow">
+    <h3 id="start">Start</h3>
+  <p>
+  January 2021
+  </p>
+</section>
+<section class=" narrow">
+    <h3 id="where">Where</h3>
+  <p>
+  Boston, MA
+  </p>
+</section>
+    </aside>
+</article>
+</div>
+      <!-- footer -->
+      <!-- footer -->
+<footer>
+  <section>
+    <h3>Last Updated</h3>
+    <p class=\"timestamp\">
+    <script type="text/javascript">
+      var t = "Mon Jan 18, 2021 20:51 EST";
+      var ta = time_ago(t);
+      document.open();
+      if (!!ta)
+        document.write(ta);
+      else
+        document.write(t);
+      document.close();
+    </script>
+    <noscript>Mon Jan 18, 2021 20:51 EST</noscript></p>
+  </section>
+  <section>
+    <h3>Copyright</h3>
+    <p>&copy; Evan Dietrich, 2021</p>
+  </section>
+</footer>
+    </div>
+      <script src="//cdn.jsdelivr.net/npm/vega@4.2.0"></script>
+      <script src="//cdn.jsdelivr.net/npm/vega-lite@3.0.0-rc6"></script>
+    <script src="/js/charts.js"></script>
+    <script src="/js/highlight.js"></script>
+  </body>
+</html>
