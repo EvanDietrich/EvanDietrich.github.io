@@ -1001,11 +1001,11 @@ nav .nav-item.active {
 nav .nav-item.active:before {
     content: "\25BA";
     font-size: 0.7rem;
-    color: #df2120;
+    color: #207fdf;
     position: absolute;
     left: -1rem;
     padding-top: 0.05rem;
-    opacity: .3
+    opacity: .99
 }
 
 nav .nav-item:hover:before {
@@ -1015,7 +1015,7 @@ nav .nav-item:hover:before {
     position: absolute;
     left: -1rem;
     padding-top: 0.05rem;
-    opacity: .8
+    opacity: .4
 }
 
 hr {
