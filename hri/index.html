@@ -177,6 +177,20 @@
 </li>
 </ul>
 </section>
+<section class="">
+    <h3 id="model-dynamics">Model Dynamics</h3>
+  <ul class="accessory">
+    <li>
+<span><span><strong>Architecture</strong>: The model consists of sets of units divided into pools; in each pool all of the units inhibit each other. Between pools, units may have excitatory or inhibitory connections. Some of these connections are bi-directional while others are not.</span></span>
+</li>
+    <li>
+<span><span><strong>Cycles</strong>: The activations of the units in the network evolve gradually over time in a continuous fashion. However, when simulating this model computationally, this mathematical ideal is approximated by breaking time into a sequence of discrete steps called cycles. At the start of every cycle, the activation value of every unit is the value that was computed at the end of the preceding cycle.</span></span>
+</li>
+    <li>
+<span><span><strong>Activation</strong>: The change in activation of the units in the network is a function that takes as input the current activation of the unit, and the net input to the unit from other units or from outside the network. The net input to a given unit (e.g., unit i) is the sum of the influences of all of the other units in the network, plus any external input from outside the network. The influence of another unit (e.g., unit j) is the product of that unit’s output, multiplied by the weight of the connection to unit i from unit j.</span></span>
+</li>
+</ul>
+</section>
     </div>
     <div class="gutter"></div>
     <aside>
