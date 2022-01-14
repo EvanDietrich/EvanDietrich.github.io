@@ -35,7 +35,7 @@
 <nav>
 	<!-- brand -->
 	<header class="brand">
-		<h1 class="logo"><a href="../">ev.dev</a></h1>
+		<h1 class="logo"><a href="../">evandietrich.dev</a></h1>
 		<div class="icons">
 			<a class="icon github" href="https://github.com/evandietrich" title="Github" target="_blank">github</a>             
 			<a class="icon linkedin" href="https://linkedin.com/in/evandietrich" title="LinkedIn" target="_blank">linkedin</a>      
@@ -56,7 +56,8 @@
 		</section> -->
 		<section class="narrow">
 			<h3>Location</h3>
-			    <p><a href="../travel">Remote</a></p>
+<!--           <p><a href="/travel">Remote</a></p>
+ -->    <p>NYC</p>
 		</section>
 		<section class="narrow">
 			<h3>R&eacute;sum&eacute;</h3>
@@ -70,24 +71,21 @@
           <p>
             <a href="../mit/" class="nav-item active">MIT</a> <em class="detail">Cambridge, MA</em>
           </p>
-          <p>
+<!--           <p>
             <a href="../mitll/" class="nav-item">MIT Lincoln Laboratory</a> <em class="detail">Lexington, MA</em>
-          </p>
+          </p> -->
           <p>
             <a href="../tuftscs/" class="nav-item">Tufts Dept. of Computer Science</a> <em class="detail">Boston, MA</em>
           </p>
       </section>
       <section>
-        <h3>Research</h3>
+        <h3>Assorted</h3>
           <p>
-            <a href="/spatial/" class="nav-item">Spatial Cognition</a> <em class="detail"></em>
-          </p>
-          <p>
-            <a href="/hri/" class="nav-item">Human-Robot Interaction</a> <em class="detail">Matthias Scheutz</em>
+            <a href="/spatial/" class="nav-item">Undergraduate Research</a> <em class="detail"></em>
           </p>
       </section>
     <script type="text/javascript">
-    var pages = [["jpmc", "../jpmc/"],["mit", "../mit/"],["mitll", "../mitll/"],["tuftscs", "../tuftscs/"],["spatial", "../spatial/"],["hri", "../hri/"],];
+    var pages = [["jpmc", "../jpmc/"],["slalom", "../slalom/"],["mit", "../mit/"],["tuftscs", "../tuftscs/"],["spatial", "../spatial/"],];
 		window.addEventListener("keydown", function(e) {
 			var current = "mit";
 			var i = pages.findIndex(function(item) {
@@ -143,20 +141,38 @@
 <section class="">
     <h3 id="overview">Overview</h3>
   <p>
-  Current approaches to the machine translation of American Sign Language (ASL) neglect essential language nuances, data-processing techniques, and make decisions based on the preoccupations of the hearing community.
+  My work at MIT began as part of <a href="https://www.ll.mit.edu" target="_blank">Lincoln Laboratory</a>'s Summer Research Program, where I worked on a team of graduate students during Summer 2019. Towards the end of my internship, I was offered a year-round position with the University, where I led research on a comprehensive approach towards the machine translation of ASL for the remainder of undergrad.
+  </p>
+</section>
+    <h2 id="teleport">CIRCLE: Calibration of Infrared Cameras for Lasercom Evaluation</h2>
+<section class="">
+    <h3 id="overview">description</h3>
+  <p>
+    Our team was tasked with completing a full life-cycle project: Designing and developing an automated system that would run calibration tests on laser-communication terminals, capable of sending and receiving data across any atmospheric medium at light-speed. 
+  </p>
+  <p>
+    Our team took the runtime of a calibration test series from 2-3 weeks, down to overnight completion.
   </p>
 </section>
 <section class="">
-    <h3 id="background">Background</h3>
+    <h3 id="technical-summary">Technical Summary</h3>
+<picture>
+  <source srcset="../assets/attachments/mitllposter.jpg">
+  <img src="../assets/attachments/mitllposter.jpg" alt="" style="width:100%;;">
+</picture>
+  <br>
   <p>
-  Towards the end of my internship at <a href="/mitll/">Lincoln</a>, I led a team to win the annual MIT I<sup>3</sup>C Competition, from an initial 32 teams. After each workday, I would return home and work on a comprehensive system to improve the machine translation of ASL with a design informed by Signing communities. I recruited fellow interns to my team, and after success in several pitch rounds and technical poster presentations, we received ‘Best Poster’ from the Lab staff and secured funding for development during the academic year.
+  Project motivation, software, threading architecture, image processing, hardware schematic, and user interface summaries are delineated in our technical poster. The PDF version of which can be found <a href="../assets/attachments/mitllposter.pdf" target="_blank" title="Technical Poster PDF">here</a>.
   </p>
 </section>
     <h2 id="teleport">ENVOY: Enabling Natural-language Versatility & Opportunity</h2>
 <section class="">
     <h3 id="description">Description</h3>
+   <p>
+    A comprehensive system to improve the machine translation of ASL with a design informed by Signing communities.
+  </p>
   <p>
-  Over the last two years, I have focused my team’s efforts to better-distinguish ASL signs that vary slightly in presentation but hold different meanings. A computationally-expensive process, we train models and leverage the capabilities of <a href="https://mit-satori.github.io" target="_blank">the Satori supercomputing cluster</a>. ASL translation is an intellectually demanding endeavor, as several individually-difficult areas must work in harmony. We implement computer vision to run our system, capturing users’ movements and facial features in real-time. This year, I worked on feature extraction and natural language processing for language modeling, as the conversion of ASL to English is not a one-to-one translation.
+  Current approaches to the machine translation of American Sign Language (ASL) neglect essential language nuances, data-processing techniques, and make decisions based on the preoccupations of the hearing community. Over the last two years, I have focused my team’s efforts to better-distinguish ASL signs that vary slightly in presentation but hold different meanings. A computationally-expensive process, we train models and leverage the capabilities of <a href="https://mit-satori.github.io" target="_blank">the Satori supercomputing cluster</a>. ASL translation is an intellectually demanding endeavor, as several individually-difficult areas must work in harmony. We implement computer vision to run our system, capturing users’ movements and facial features in real-time. This year, I worked on feature extraction and natural language processing for language modeling, as the conversion of ASL to English is not a one-to-one translation.
   </p>
   <p>
   We faced struggles early on due to the limitations of pre-existing databases containing studio-quality translation videos, which neglected variations in lighting, background, and signer skin tone. To ensure an equitable design, I am employing novel data mining and augmentation techniques; finding automated methods to generate labelled datasets from CSPAN footage and other public sources, while expanding the diversity of signers. I further fortify our datasets by training our convolutional network models against fake data generated from adversarial networks.
@@ -173,15 +189,15 @@
     <div class="gutter"></div>
     <aside>
 <section class="">
-    <h3 id="position">Position</h3>
+    <h3 id="position">Positions</h3>
   <p>
-  Technical Researcher
+  Technical Researcher, SWE Intern
   </p>
 </section>
 <section class=" narrow">
     <h3 id="start">Start</h3>
   <p>
-  August 2019
+  May 2019
   </p>
 </section>
 <section class=" narrow">
@@ -196,7 +212,7 @@
   Cambridge, MA
   </p>
 </section>
-<section class="">
+<!-- <section class="">
     <h3 id="technologies">Technologies</h3>
   <ul class="inline">
     <li>
@@ -211,7 +227,7 @@
     <li>
 <span><span>Julia</span></span>
 </li>
-</ul>
+</ul> -->
 </section>
     </aside>
 </article>

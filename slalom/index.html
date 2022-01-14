@@ -14,59 +14,62 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" type="image/png" href="../assets/images/icon.png" >
   <meta property="og:site_title" content="Evan Dietrich" />
-  <meta property="og:title" content="evandietrich.dev &ndash; Spatial" />
+  <meta property="og:title" content="evandietrich.dev &ndash; Slalom" />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://evandietrich.dev/assets/images/og.png" />
-  <meta property="og:url" content="https://evandietrich.dev/spatial/" />
-  <meta property="og:description" content="Undergraduate Research"/>
-  <title>evandietrich.dev &ndash; Undergraduate Research</title>
-  <meta name="description" content="Spatial Cognition Lab">
+  <meta property="og:url" content="https://evandietrich.dev/jpmc/" />
+  <meta property="og:description" content="Slalom"/>
+  <title>evandietrich.dev &ndash; Slalom</title>
+  <meta name="description" content="Slalom">
   <!-- pre-load scripts -->
     <script src="../js/init.js"></script>
   <!-- styles -->
     <link rel="stylesheet" href="../css/main.css">
   <!-- webfonts -->
   <link href='https://fonts.googleapis.com/css?family=Ubuntu:700' rel='stylesheet' type='text/css'>
-  <link rel="canonical" href="/spatial/">
+  <link rel="canonical" href="/jpmc/">
 </head>
   <body>
-    <div class="container" id="spatial">
+    <div class="container" id="jpmc">
 <!-- sidebar -->
 <nav>
-	<!-- brand -->
-	<header class="brand">
-		<h1 class="logo"><a href="../">evandietrich.dev</a></h1>
-		<div class="icons">
-			<a class="icon github" href="https://github.com/evandietrich" title="Github" target="_blank">github</a>             
-			<a class="icon linkedin" href="https://linkedin.com/in/evandietrich" title="LinkedIn" target="_blank">linkedin</a>      
-		</div>
-	</header>
-	<!-- lede -->
-	<div id="lede">
-		<!-- intro -->
-		<section>
+    <!-- brand -->
+    <header class="brand">
+        <h1 class="logo"><a href="../">evandietrich.dev</a></h1>
+        <div class="icons">
+          <a class="icon github" href="https://github.com/evandietrich" title="Github" target="_blank">github</a>             
+          <a class="icon linkedin" href="https://linkedin.com/in/evandietrich" title="LinkedIn" target="_blank">linkedin</a>      
+        </div>
+    </header>
+    <!-- lede -->
+    <div id="lede">
+        <!-- intro -->
+        <section>
         <p>Hi, I’m <strong>Evan</strong>. I'm a software engineer and recent grad of <a href="https://tufts.edu" target="_blank">Tufts</a>, where I studied Computer Science, Cognitive and Brain Sciences.</p>
         <p>Over the past several years, I’ve led a research group at <a href="https://mit.edu" target="_blank">MIT</a>, TA’d grad-level courses, and fostered my interest in quantitative development and predictive analytics.</p>
       <a href="/about/" class="right light">about me &raquo;</a>
     </section>
-		<!-- links -->
-<!-- 		<section class="narrow">
-			<h3>Inquiry</h3>
-			<p><a href="mailto:evand@mit.edu?body=Hi Evan,%0D%0A" title="Email">evand@mit.edu</a></p>
-		</section> -->
-		<section class="narrow">
-			<h3>Location</h3>
+        <!-- links -->
+<!--        <section class="narrow">
+            <h3>Inquiry</h3>
+            <p><a href="mailto:evand@mit.edu?body=Hi Evan,%0D%0A" title="Email">evand@mit.edu</a></p>
+        </section> -->
+        <section class="narrow">
+            <h3>Location</h3>
 <!--           <p><a href="/travel">Remote</a></p>
- -->    <p>NYC</p>
-		</section>
-		<section class="narrow">
-			<h3>R&eacute;sum&eacute;</h3>
-			<p><a href="../assets/resume/Evan_Dietrich_Resume.pdf" target="_blank" title="R&eacute;sum&eacute;">Download</a></p>
-		</section>
+ -->          <p>NYC</p>
+        </section>
+        <section class="narrow">
+            <h3>R&eacute;sum&eacute;</h3>
+            <p><a href="../assets/resume/Evan_Dietrich_Resume.pdf" target="_blank" title="R&eacute;sum&eacute;">Download</a></p>
+        </section>
       <section>
         <h3>Experience</h3>
           <p>
             <a href="../jpmc/" class="nav-item">J.P. Morgan</a> <em class="detail">New York, NY</em>
+          </p>
+          <p>
+            <a href="../slalom/" class="nav-item active">Slalom</a> <em class="detail">Remote</em>
           </p>
           <p>
             <a href="../mit/" class="nav-item">MIT</a> <em class="detail">Cambridge, MA</em>
@@ -81,33 +84,33 @@
       <section>
         <h3>Assorted</h3>
           <p>
-            <a href="../spatial/" class="nav-item active">Undergraduate Research</a> <em class="detail"></em>
+            <a href="/spatial/" class="nav-item">Undergraduate Research</a> <em class="detail"></em>
           </p>
       </section>
     <script type="text/javascript">
     var pages = [["jpmc", "../jpmc/"],["slalom", "../slalom/"],["mit", "../mit/"],["tuftscs", "../tuftscs/"],["spatial", "../spatial/"],];
-		window.addEventListener("keydown", function(e) {
-			var current = "spatial";
-			var i = pages.findIndex(function(item) {
-				return item[0] == current;
-			});
-			if (e.key === 'k') { // k, up
-				i--;
-				if (i < 0) {
-					i = pages.length-1;
-				}
-				window.location.href = pages[i][1];
-			} else if (e.key === 'j') { // j, down
-				i++;
-				if (i >= pages.length) {
-					i = 0;
-				}
-				window.location.href = pages[i][1];
-			}
-		}, true);
-		</script>
-	</div>
-	<!-- footer -->
+        window.addEventListener("keydown", function(e) {
+            var current = "slalom";
+            var i = pages.findIndex(function(item) {
+                return item[0] == current;
+            });
+            if (e.key === 'k') { // k, up
+                i--;
+                if (i < 0) {
+                    i = pages.length-1;
+                }
+                window.location.href = pages[i][1];
+            } else if (e.key === 'j') { // j, down
+                i++;
+                if (i >= pages.length) {
+                    i = 0;
+                }
+                window.location.href = pages[i][1];
+            }
+        }, true);
+        </script>
+    </div>
+    <!-- footer -->
 <footer>
   <section>
     <h3>Last Updated</h3>
@@ -132,28 +135,16 @@
 </nav>
       <div class="gutter"></div>
       <div id="page">
-	<!-- page header -->
-	<header>
-		<h1>Undergraduate Research</h1>
-	</header>
-		<article class="flip">
+    <!-- page header -->
+    <header>
+        <h1>Slalom</h1>
+    </header>
+        <article class="flip">
     <div class="main">
 <section class="">
-    <h3 id="overview">Human-Robot Interaction</h3>
+    <h3 id="overview">Overview</h3>
   <p>
-  Eager to test out CS in Academia, I joined <a href="https://engineering.tufts.edu/people/faculty/matthias-scheutz" target="_blank">Prof. Scheutz's</a> <a href="https://hrilab.tufts.edu" target="_blank">HRI Lab</a> in early 2018, assisting a Doctoral student in extending the capabilities of a network modeling language-switching costs.
-  </p>
-  <p>
-  Working in Python, I wrote novel lexical methods and restructured the internal codebase of our <a href="https://web.stanford.edu/group/pdplab/originalpdphandbook/Chapter%207.pdf" target="_blank">interactive activation model</a>, using bilingual lexicon data to explain the rarity of codeswitching mistakes in bilingual speech production.
-  </p>
-</section>
-<section class="">
-    <h3 id="overview">Spatial Cognition</h3>
-  <p>
-  After getting a sense of CS research and concluding my project at the HRI Lab, I joined Tufts' <a href="https://sites.tufts.edu/spatialcog/">Spatial Cognition Lab</a> in May 2018. Here, I assisted in research on the connection between individual differences in spatial thinking and STEM learning, using those connections to develop assessments and interventions.
-  </p>
-  <p>
-  I self-taught R and STATA to execute statistical analysis, conducted robust literature reviews, and wrote extensive manuscript.
+  I worked at Slalom as an Associate Consultant, bringing experience in cloud computing and AWS development. There, I helped design and deploy scalable, extendable, and maintainable full stack application infrastructure. 
   </p>
 </section>
     </div>
@@ -162,31 +153,30 @@
 <section class="">
     <h3 id="position">Position</h3>
   <p>
-  Research Assistant
+  Associate Consultant
   </p>
 </section>
 <section class=" narrow">
-    <h3 id="start">Start</h3>
+    <h3 id="when">Start</h3>
   <p>
-  January 2018
+  September 2021
   </p>
 </section>
 <section class=" narrow">
-    <h3 id="end">End</h3>
+    <h3 id="when">End</h3>
   <p>
-  March 2019
+  January 2022
   </p>
 </section>
 <section class=" narrow">
     <h3 id="where">Where</h3>
   <p>
-  Boston, MA
+  Remote
   </p>
 </section>
     </aside>
 </article>
 </div>
-      <!-- footer -->
       <!-- footer -->
 <footer>
   <section>
