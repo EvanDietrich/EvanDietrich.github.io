@@ -4,7 +4,7 @@
     --b-font-main: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --b-font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     --b-txt: #2e3440;
-    --b-bg-1: #d7d5d5;     /* #fff;  */
+    --b-bg-1: #e6e5e5;     /* #fff; ... d7d5d5... */
     --b-bg-2: #eceff4;
     --b-line: #eceff4;
     --b-link: #281e72;
